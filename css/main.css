@@ -14,19 +14,22 @@
 /*Colors are Shades of Green & Gold */
 
 
+
+
 body {
     background-color: #ecf0f1;
 }
 
-.daily_pick {
+/*DAILY PICK*/
+#daily_pick {
     text-align: center;
 }
 
-.daily_pick h1 {
+#daily_pick h1 {
     color: #27ae60;
 }
 
-.featured_position {
+#featured_position {
     text-align: center;
 }
 
@@ -42,6 +45,9 @@ body {
     text: white;
     background-color: #27ae60;
     overflow: hidden;
+
+    /*perspective: 1000px;
+    transform: rotateY(50deg);*/
 }
 
 .outer:after {
@@ -96,6 +102,28 @@ body {
     /*how can i change the size of font?*/
 }
 
+
+/*PICK DETAIL*/
+#pick_detail {
+  /*position: relative;*/
+  display: inline-block;
+}
+
+#pick_detail img {
+  margin: 0 3% 0 10%;
+  border-radius: 2%;
+  float: left;
+}
+
+#news a {
+  display: block;
+  float: left;
+  font-size: 100%;
+  line-height: 300%;
+  font-family: 'Bevan', cursive;
+}
+
+/* FEATURED POSITION */
 .featured_position h1 {
     color: white;
 }

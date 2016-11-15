@@ -14,7 +14,9 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto" rel="stylesheet">
+
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 
     </head>
@@ -51,7 +53,7 @@
 </nav>
 
 
-    <div class="daily_pick">
+    <div id="daily_pick">
         <h1>DAILY PICK</h1>
         <div class="outer">
             <div class="buy">
@@ -124,7 +126,19 @@
         </div>
     </div>
 
-    <div class="featured_position">
+
+    <span id="pick_detail">
+      <img src="img/appl-stock-chart.png" height=300px width=500px>
+      <div id="news">
+        <a href="http://www.publicnow.com/view/244DCAD683613E5BE332DDA23835574A4645A370">Get Ready: Unreal Engine 4 Support for NVIDIA Ansel Available Now</a>
+        <a href="http://www.fool.com/investing/2016/11/15/3-stocks-at-52-week-highs-still-worth-buying.aspx?source=yahoo-2-news&utm_campaign=article&utm_medium=feed&utm_source=yahoo-2-news">3 Stocks at 52-Week Highs Still Worth Buying</a>
+        <a href="http://realmoney.thestreet.com/articles/11/15/2016/nvidias-jaw-dropping-quarter-defining-line-sand?puc=yahoo&cm_ven=YAHOO">Nvidia's Jaw-Dropping Quarter Is a Defining Line in the Sand
+        </a>
+      </div>
+    </span>
+
+
+    <div id="featured_position">
         <div class="feature_outer">
             <h1>FEATURED POSITION (i)</h1>
             <div class="feature_inner">
@@ -149,6 +163,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <script src="path/to/shine.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
