@@ -1,5 +1,9 @@
 $(document).ready(function () {
-  $("div.daily_pick").mouseover(function () {
-    console.log('mouseover working');
+  $("div.inner").click(function() {
+    $($(this).parent()["0"].firstChild.nextElementSibling).one(replaceWith($("div.inner h2")[0]))
+
+    // $("div.inner h2")[0]
+    // $("div.inner h2")[1]
+    // $("div.sell").hide()
   })
 })
