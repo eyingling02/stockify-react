@@ -110,17 +110,21 @@ body {
 }
 
 #pick_detail img {
-  margin: 0 3% 0 10%;
+  margin: 0 0 5% 7%;
   border-radius: 2%;
   float: left;
+  border: 4px solid white;
 }
 
+
 #news a {
-  display: block;
   float: left;
-  font-size: 100%;
+  font-size: 110%;
   line-height: 300%;
   font-family: 'Bevan', cursive;
+  margin: 0 0 0 3%;
+  border-bottom: 2px solid white;
+  padding: 0 1% 0 1%;
 }
 
 /* FEATURED POSITION */
