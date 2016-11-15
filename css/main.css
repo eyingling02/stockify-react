@@ -31,10 +31,6 @@ body {
     font-size: 275%;
 }
 
-#featured_position {
-    text-align: center;
-}
-
 .outer {
     position: relative;
     display: inline-block;
@@ -140,6 +136,12 @@ body {
 }
 
 /* FEATURED POSITION */
+#featured_position {
+    margin: 0 5% 0 5%;
+    border-top: 2px solid white;
+;
+}
+
 .featured_outer h1 {
     color: white;
 }
