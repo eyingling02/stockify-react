@@ -27,6 +27,8 @@ body {
 
 #daily_pick h1 {
     color: #27ae60;
+    font-family: 'Bevan', cursive;
+    font-size: 275%;
 }
 
 #featured_position {
@@ -39,15 +41,12 @@ body {
     height: 18%;
     width: 15%;
     border: 3px solid #FFFFFF;
-    border-radius: 15%;
+    border-radius: 35px;
     box-shadow: 5em white;
-    margin: 2% 2% 5% 0;
+    margin: 1% 2% 4% 0;
     text: white;
     background-color: #27ae60;
     overflow: hidden;
-
-    /*perspective: 1000px;
-    transform: rotateY(50deg);*/
 }
 
 .outer:after {
@@ -58,7 +57,7 @@ body {
   width: 200%;
   height: 200%;
   opacity: 0;
-  transform: rotate(25deg);
+  transform: rotate(30deg);
 
     background: rgba(255, 255, 255, 0.13);
     background: linear-gradient(
@@ -91,15 +90,28 @@ body {
     background-color: #ecf0f1;
     color: #1a7c31;
 }
+
+.buy h3{
+  font-weight: 500;
+  font-size: 200%;
+}
+
 .sell {
     background-color: #ecf0f1;
     color: red;
+    /*font-family: 'Open Sans', sans-serif;
+    font-weight: 800;*/
 }
+
+.sell h3{
+  font-weight: 500;
+  font-size: 200%;
+}
+
 .inner {
     text-align: center;
     color: white;
     font-weight: bold;
-    /*how can i change the size of font?*/
 }
 
 
@@ -111,7 +123,7 @@ body {
 
 #pick_detail img {
   margin: 0 0 5% 7%;
-  border-radius: 2%;
+  border-radius: 10px;
   float: left;
   border: 4px solid white;
 }
@@ -128,7 +140,7 @@ body {
 }
 
 /* FEATURED POSITION */
-.featured_position h1 {
+.featured_outer h1 {
     color: white;
 }
 .featured_position {
@@ -140,7 +152,6 @@ body {
     width: 100%;
     border-top: 4px solid #FFFFFF;
     border-bottom: 4px solid #FFFFFF;
-    border-radius: 2%;
     box-shadow: 5em white;
     margin: 0 2% 0 0;
     text: white;
