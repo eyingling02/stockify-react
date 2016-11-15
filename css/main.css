@@ -17,7 +17,8 @@
 
 
 body {
-    background-color: #ecf0f1;
+    background-color: #565656;
+    /*background-color: #ecf0f1;*/
 }
 
 /*DAILY PICK*/
@@ -26,7 +27,8 @@ body {
 }
 
 #daily_pick h1 {
-    color: #27ae60;
+    color: #85bb65;
+    /*color: #27ae60;*/
     font-family: 'Bevan', cursive;
     font-size: 275%;
 }
@@ -41,7 +43,7 @@ body {
     box-shadow: 5em white;
     margin: 1% 2% 4% 0;
     text: white;
-    background-color: #27ae60;
+    background-color: #85bb65 ;
     overflow: hidden;
 }
 
@@ -83,25 +85,27 @@ body {
 }
 
 .buy {
+    margin-top: 1.5em;
     background-color: #ecf0f1;
-    color: #1a7c31;
 }
 
-.buy h3{
+.buy a {
   font-weight: 500;
   font-size: 200%;
+  color: #565656;
 }
 
 .sell {
+    margin-bottom: 1.5em;
     background-color: #ecf0f1;
-    color: red;
     /*font-family: 'Open Sans', sans-serif;
     font-weight: 800;*/
 }
 
-.sell h3{
+.sell a{
   font-weight: 500;
   font-size: 200%;
+  color: #565656;
 }
 
 .inner {
