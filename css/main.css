@@ -29,14 +29,18 @@ body {
 
 /*DAILY PICK*/
 #daily_pick {
-    text-align: center;
+  text-align: center;
 }
 
 #daily_pick h1 {
     /*color: #85bb65;*/
     color: #27ae60;
     font-family: 'Bevan', cursive;
-    font-size: 275%;
+    font-size: 450%;
+}
+
+#shine {
+  background-color: #ecf0f1;
 }
 
 .outer {
@@ -140,7 +144,7 @@ body {
   color: #2c3e50;
   /*color: #7f8c8d;*/
   float: left;
-  font-size: 110%;
+  font-size: 100%;
   line-height: 300%;
   font-family: 'Bevan', cursive;
   margin: 0 0 0 3%;
