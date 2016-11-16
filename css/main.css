@@ -23,8 +23,8 @@ body {
     /*milky white*/
     /*background-color: #f9f1e4;*/
 
-    background-color: #FFFFFF;
-    /*background-color: #ecf0f1;*/
+    /*background-color: #FFFFFF;*/
+    background-color: #ecf0f1;
 }
 
 /*DAILY PICK*/
@@ -33,22 +33,23 @@ body {
 }
 
 #daily_pick h1 {
-    color: #85bb65;
-    /*color: #27ae60;*/
+    /*color: #85bb65;*/
+    color: #27ae60;
     font-family: 'Bevan', cursive;
     font-size: 275%;
 }
 
 .outer {
+    background-color: #27ae60;
+    /*background-color: #85bb65 ;*/
     position: relative;
     display: inline-block;
     height: 18%;
     width: 15%;
-    border: 3px solid #ecf0f1;
+    border: 3px solid #FFFFFF;
     border-radius: 35px;
     margin: 1% 2% 4% 0;
     text: white;
-    background-color: #85bb65 ;
     overflow: hidden;
 }
 
@@ -97,7 +98,7 @@ body {
 .buy a {
   font-weight: 500;
   font-size: 200%;
-  color: #46582e;
+  color: #a6ed49;
 }
 
 .sell {
@@ -110,7 +111,8 @@ body {
 .sell a{
   font-weight: 500;
   font-size: 200%;
-  color: #e25119;
+  color: #ff0000;
+  /*color: #e25119;*/
 }
 
 .inner {
@@ -128,14 +130,15 @@ body {
 
 #pick_detail img {
   margin: 0 0 5% 7%;
-  border-radius: 10px;
+  border-radius: 15px;
   float: left;
   border: 4px solid white;
 }
 
 
 #news a {
-  color: #7f8c8d;
+  color: #2c3e50;
+  /*color: #7f8c8d;*/
   float: left;
   font-size: 110%;
   line-height: 300%;
