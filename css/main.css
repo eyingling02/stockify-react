@@ -53,7 +53,7 @@ body {
     overflow: hidden;
 }
 
-.outer:after {
+/*.outer:after {
   content: "";
   position: absolute;
   top: -110%;
@@ -75,7 +75,7 @@ body {
 
 /* Hover state - trigger effect */
 
-.outer:hover:after {
+/*.outer:hover:after {
   opacity: 1;
   top: -30%;
   left: -30%;
@@ -86,9 +86,10 @@ body {
 
 /* Active state */
 
-.outer:active:after {
+/*.outer:active:after {
   opacity: 0;
-}
+}*/
+
 
 .buy {
     margin-top: 1.5em;
