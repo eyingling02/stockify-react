@@ -32,15 +32,11 @@ body {
   text-align: center;
 }
 
-#daily_pick h1 {
+#shine {
     /*color: #85bb65;*/
     color: #27ae60;
     font-family: 'Bevan', cursive;
     font-size: 450%;
-}
-
-#shine {
-  background-color: #ecf0f1;
 }
 
 .outer {
