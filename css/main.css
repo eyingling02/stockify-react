@@ -22,11 +22,14 @@ body {
 
     /*milky white*/
     /*background-color: #f9f1e4;*/
-
+    /*background-color: #f5f5f5;*/
     /*background-color: #FFFFFF;*/
-    background-color: #ecf0f1;
+    /*background-color: #ecf0f1;*/
 }
 
+.navbar {
+  background-color: "Transparent";
+}
 /*DAILY PICK*/
 #daily_pick {
   text-align: center;
@@ -51,9 +54,11 @@ body {
     margin: 1% 2% 4% 0;
     text: white;
     overflow: hidden;
+    /*-moz-box-shadow: 0 0 30px black;*/
+    box-shadow: 2px 2px 10px black;
 }
 
-/*.outer:after {
+.outer:after {
   content: "";
   position: absolute;
   top: -110%;
@@ -75,36 +80,39 @@ body {
 
 /* Hover state - trigger effect */
 
-/*.outer:hover:after {
+.outer:hover:after {
   opacity: 1;
   top: -30%;
-  left: -30%;
+  left: 175%;
   transition-property: left, top, opacity;
-  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-duration: 1.7s, 0.7s, 0.15s;
   transition-timing-function: ease;
 }
 
 /* Active state */
 
-/*.outer:active:after {
+.outer:active:after {
   opacity: 0;
-}*/
+}
 
 
 .buy {
     margin-top: 1.5em;
     background-color: #FFFFFF;
+    box-shadow: 0 0 6px #777777;
 }
 
 .buy a {
   font-weight: 500;
   font-size: 200%;
   color: #a6ed49;
+  text-decoration: none;
 }
 
 .sell {
     margin-bottom: 1.5em;
     background-color: #FFFFFF;
+    box-shadow: 0 0 6px #777777;
     /*font-family: 'Open Sans', sans-serif;
     font-weight: 800;*/
 }
@@ -113,13 +121,17 @@ body {
   font-weight: 500;
   font-size: 200%;
   color: #ff0000;
+  text-decoration: none;
   /*color: #e25119;*/
 }
 
-.inner {
+.inner  {
     text-align: center;
     color: white;
-    font-weight: bold;
+}
+.inner h2 {
+    font-weight: 550;
+    letter-spacing: 1.45px;
 }
 
 
