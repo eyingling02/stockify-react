@@ -1,0 +1,26 @@
+.stock-square {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 19.99vh;
+  width: 13vw;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  /*vertical-align: middle;*/
+  /*float: left;*/
+  /*display: block;*/
+}
+
+.stock-square p {
+  font-size: 40px;
+  text-align: center;
+  line-height: 16.66vh;
+  border-collapse: collapse;
+}
+
+div#main-stock {
+  background-image: url("../img/main-stock.png");
+  height: 500px;
+  width: 1000px;
+}
