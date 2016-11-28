@@ -1,15 +1,15 @@
-$(document).ready(function(){
-  // $('.favorites').slick({
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   fade: true,
-  //   cssEase: 'linear'
-  // });
-  $('.favorites').slick({
-  infinite: true,
-  slidesToShow: ,
-  slidesToScroll: 3
-  });
 
+window.sr = ScrollReveal();
+// sr.reveal('.category');
+sr.reveal('.outer');
+
+
+$(document).ready(function(){
+  //
+  // $('.favorites').slick({
+  // infinite: true,
+  // slidesToShow: 0,
+  // slidesToScroll: 3
+  // });
+  //
 });
