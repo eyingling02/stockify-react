@@ -23,7 +23,7 @@ body {
   background-color: "Transparent";
 }
 
-#daily_pick {
+#picks {
   text-align: center;
 }
 #shine {
@@ -31,6 +31,14 @@ body {
     font-size: 450%;
 }
 
+/* HEADERS */
+.category {
+  text-align: left;
+  margin-left: 4em;
+  font-size: 2em;
+  color: #27ae60;
+
+}
 .outer {
     background-color: #27ae60;
     position: relative;
