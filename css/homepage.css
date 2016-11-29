@@ -67,6 +67,14 @@ body {
   padding-left: 10px;
 }
 
+.streaks .outer .inner h3:last-child {
+  font-size: 1.5em;
+}
+.streaks .outer .inner h3 {
+  font-size: 1.3em;
+  margin: 0 0 8px 0;
+}
+
 .outer {
 /*background-color: #606060;*/
 background-color: #404040;
