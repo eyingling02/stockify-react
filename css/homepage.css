@@ -68,11 +68,13 @@ background-color: #404040;
     /*background-color: #27ae60;*/
     position: relative;
     display: inline-block;
-    height: 18%;
-    width: 15%;
+    /*height: 18%;*/
+    /*width: 15%;*/
+    height: 290px;
+    width: 200px;
     border: 3px solid #FFFFFF;
     border-radius: 35px;
-    margin: 1% 2% 4% 0;
+    margin: 1% 1% 1% 1%;
     text: white;
     overflow: hidden;
     box-shadow: 2px 2px 10px black;
@@ -151,15 +153,33 @@ background-color: #404040;
 
 .inner  {
     text-align: center;
+    height: 140px;
+    width: 190px;
     /*color: white;*/
     /*color: #c5b358;*/
 }
 .inner h2 {
     font-weight: 550;
     letter-spacing: 1.45px;
-    color: white;
 }
-.inner h3 {
+.inner a {
+  text-align: "left";
+  font-size: 1.1em
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.inner a:hover {
+     color: white;
+     cursor: pointer;
+     /*font-style: normal;*/
+     /*text-decoration: none;*/
+}
+
+.inner p {
+  text-align: "left";
+  font-size: .9em
+}
+.inner * {
   color: white;
 }
 
