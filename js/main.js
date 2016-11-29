@@ -7,6 +7,7 @@ $(document).ready( function(){
     $(a).css("color", "white")
 
     var sell = $(this).siblings()[1]
+    // $(sell).children().css("color", "white")
     $(sell).children().css("color", "white")
     $(sell).children().html("BUY")
     $(sell).css("background-color", "green")
@@ -15,7 +16,8 @@ $(document).ready( function(){
     var inner = $(this).next()
     $(outer).css("background", "white")
     $(outer).css("border", "5px solid green")
-    $(inner).children().css("color", "green")
+    // $(inner).children().css("color", "green")
+    $(inner).children().css("color", "#c5b358")
   })
 
   //Select Sell
@@ -34,7 +36,8 @@ $(document).ready( function(){
     var inner = $(this).prev()
     $(outer).css("background", "white")
     $(outer).css("border", "5px solid red")
-    $(inner).children().css("color", "red")
+    // $(inner).children().css("color", "red")
+    $(inner).children().css("color", "#c5b358")
   })
 
   var shine = new Shine(document.getElementById('shine'));
