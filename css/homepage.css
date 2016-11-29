@@ -62,6 +62,10 @@ body {
   /*color: #27ae60;*/
   color: #606060;
 }
+.favorites p {
+  text-align: left;
+  padding-left: 10px;
+}
 
 .outer {
 /*background-color: #606060;*/
@@ -159,7 +163,7 @@ background-color: #404040;
     /*color: white;*/
     /*color: #c5b358;*/
 }
-.inner h2 {
+.inner h2:first {
     font-weight: 550;
     letter-spacing: 1.45px;
 }
