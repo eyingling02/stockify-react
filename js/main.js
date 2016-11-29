@@ -5,7 +5,6 @@ $(document).ready( function(){
 
     var a = $(this).children()
     $(a).css("color", "white")
-
     var sell = $(this).siblings()[1]
     // $(sell).children().css("color", "white")
     $(sell).children().css("color", "white")
