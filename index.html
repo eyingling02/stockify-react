@@ -12,13 +12,18 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/home.css">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="css/homepage.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto|Open+Sans" rel="stylesheet">
+
+        <!-- Slick.js -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <!-- Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 
@@ -32,39 +37,763 @@
 
         <!-- Add your site or application content here -->
 
-        <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-ollapse" data-target="#bs-example-navbar-ctoggle="collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="img/favicon-32x32.png"></a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">About Us<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Investors</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    <div id="picks">
+        <!-- <h1 id="shine">Stockify</h1> -->
+
+        <div class="row">
+
+          <div class="category">
+            <p>Recently Viewed</p>
+          </div>
+          <button type="button" class="slick-prev">Previous</button>
+          <div class="slickest col-lg-12 col-md-6 col-xs-12">
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TSLA</h2>
+                    <a href="https://www.thestreet.com/story/13906600/1/tesla-tsla-with-the-solarcity-merger-complete-may-face-model-3-delays.html" target="_blank">Tesla (TSLA), With the SolarCity Merger Complete ...</a>
+                    <p>The Street</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;"> BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TWTR</h2>
+                    <a href="http://www.investopedia.com/news/twitter-stock-short-interest-declines-21-twtr/" target="_blank">Twitter Stock Short Interest Declines 21% (TWTR)</a>
+                    <p>Investopedia</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>NVDA</h2>
+                    <a href="http://www.economiccalendar.com/2016/11/29/nvidia-nvda-has-the-potential-to-sustain-its-share-price-rally/" target="_blank">NVIDIA (NVDA) Has the Potential to Sustain Its Share Price Rally</a>
+                    <p>Economic Calendar</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>AAPL</h2>
+                    <a href="https://investorplace.com/2016/11/apple-inc-aapl-iphone-pro-2017-iplace/" target="_blank">Apple Inc. (AAPL) Could Introduce an iPhone Pro in 2017</a>
+                    <p>Investor Place</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>FB</h2>
+                    <a href="https://investorplace.com/2016/11/facebook-inc-fb-stock-send-guillotine/#.WD3ojOErJPM" target="_blank">This Could Send Facebook Inc (FB) Stock to the Guillotine</a>
+                    <p>Investor Place</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+            <!-- <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TSLA</h2>
+                    <h2>+10%</h2>
+                    <h3>Tesla Motors</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TWTR</h2>
+                    <h2>-20%</h2>
+                    <h3>Twitter</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>NVDA</h2>
+                    <h2>+27.6%</h2>
+                    <h3>NVIDIA</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>AAPL</h2>
+                    <h2>+5%</h2>
+                    <h3>Apple</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>FB</h2>
+                    <h2>+10%</h2>
+                    <h3>Facebook</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+          </div>
+          <button type="button" class="slick-next">Next</button>
+        </div> -->
 
 
-    <div id="daily_pick">
-        <h1 id="shine">Market Movers</h1>
+        <div class="row">
+          <div class="category">
+            <p>Trending Now</p>
+            <!-- Popular | Gainers | Losers -->
+          </div>
+          <div class="col-lg-12 col-md-6 col-xs-12">
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TSLA</h2>
+                    <h2>+10% today</h2>
+                    <h3>Tesla Motors</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TWTR</h2>
+                    <h2>-20% today</h2>
+                    <h3>Twitter</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>NVDA</h2>
+                    <h2>+27% today</h2>
+                    <h3>NVIDIA</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>AAPL</h2>
+                    <h2>+5% today</h2>
+                    <h3>Apple</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>FB</h2>
+                    <h2>+10% today</h2>
+                    <h3>Facebook</h3>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="category">
+            <p>My Favorites</p>
+          </div>
+            <div class="favorites outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TSLA</h2>
+                    <p>Today Gain/Loss: +2.20%</p>
+                    <p>Total Gain/Loss: +19.01%</p>
+                    <p>Duration: 1 of 5 days</p>
+                    <!-- <p>Purchase Price: $53</p> -->
+                    <!-- <p>Acquired: 07/12/2015</p> -->
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+
+            <div class="favorites outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                  <h2>TWTR</h2>
+                  <p>Today Gain/Loss: +1.85%</p>
+                  <p>Total Gain/Loss: -10.01%</p>
+                  <p>Duration: 10 of 20 days</p>
+                  <!-- <p>Purchase Price: $13</p> -->
+                  <!-- <p>Acquired: 11/12/2016</p> -->
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+
+            <div class="favorites outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>NVDA</h2>
+                    <p>Today Gain/Loss: +10.20%</p>
+                    <p>Total Gain/Loss: +185.01%</p>
+                    <p>Duration: 132 of 250 days</p>
+                    <!-- <p>Purchase Price: $53</p> -->
+                    <!-- <p>Acquired: 07/12/2015</p> -->                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+
+            <div class="favorites outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>AAPL</h2>
+                    <p>Today Gain/Loss: +1.00%</p>
+                    <p>Total Gain/Loss: +3.01%</p>
+                    <p>Duration: 24 of 90 days</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+
+            <div class="favorites outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>FB</h2>
+                    <p>Today Gain/Loss: +2.50%</p>
+                    <p>Total Gain/Loss: +15.29%</p>
+                    <p>Duration: 74 of 60 days</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="category">
+            <p>Buy or Sell Again</p>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+  BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>TSLA</h2>
+                  <h2>-3% since last touch</h2>
+                  <h3>Tesla Motors</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+  SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+  BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>TWTR</h2>
+                  <h2>-31% since last touch</h2>
+                  <h3>Twitter</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+  SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+  BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>NVDA</h2>
+                  <h2>+94% since last touch</h2>
+                  <h3>NVIDIA</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+  SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+  BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>AAPL</h2>
+                  <h2>+5% since last touch</h2>
+                  <h3>Apple</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+  SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+  BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>FB</h2>
+                  <h2>+12% since last touch</h2>
+                  <h3>Facebook</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+  SELL</a>
+              </div>
+          </div>
+        </div>
+
+
+          <div class="row">
+            <div class="category">
+              <p>Friends Opinions</p>
+            </div>
+          <!-- <div class="col-lg-3 col-md-6 col-xs-12"> -->
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TSLA</h2>
+                    <p>$TSLA and $SCTY merged today. Consensus is good for $SCTY, bad for $TSLA...</p>
+                    <p>Victor Chen</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">SELL</a>
+                </div>
+            </div>
+
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>TWTR</h2>
+                    <p>Nothing good happening in their future. It's a toxic stock that lives with Zynga...</p>
+                    <p>Garrett Gan</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>NVDA</h2>
+                    <p>Verbally double down on NVDA. We are approaching an interesting moment...</p>
+                    <p>Nelson Chen</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>AAPL</h2>
+                    <p>Apple has gone rotten. No compelling products. Tim Cook is a backup QB...</p>
+                    <p>Palak Kumar</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+
+            <div class="outer">
+                <div class="buy">
+                    <a href="javascript:;">
+
+BUY</a>
+                </div>
+                <div class="inner">
+                    <h2>FB</h2>
+                    <p>5% on guidance that they can't maintain insane growth. Still a buy...</p>
+                    <p>Nelson Chen</p>
+                </div>
+                <div class="sell">
+                    <a href="javascript:;">
+
+SELL</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="category">
+            <p>New Discovery</p>
+          </div>
+        <!-- <div class="col-lg-3 col-md-6 col-xs-12"> -->
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>TSLA</h2>
+                  <h2>+10%</h2>
+                  <h3>Tesla Motors</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>TWTR</h2>
+                  <h2>-20%</h2>
+                  <h3>Twitter</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>NVDA</h2>
+                  <h2>+27.6%</h2>
+                  <h3>NVIDIA</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>AAPL</h2>
+                  <h2>+5%</h2>
+                  <h3>Apple</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>FB</h2>
+                  <h2>+10%</h2>
+                  <h3>Facebook</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+      </div>
+
+
+
+        <div class="streaks row">
+          <div class="category">
+            <p>Streaks</p>
+          </div>
+        <!-- <div class="col-lg-3 col-md-6 col-xs-12"> -->
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>TSLA</h2>
+                  <h3>17 predictions!</h3>
+                  <h3>17 days</h3>
+                  <h3>Victor Chen</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>TWTR</h2>
+                  <h3>12 predictions!</h3>
+                  <h3>20 days</h3>
+                  <h3>James Wang</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>NVDA</h2>
+                  <h3>6 predictions!</h3>
+                  <h3>10 days</h3>
+                  <h3>Arthur Chang</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>AAPL</h2>
+                  <h3>4 predictions!</h3>
+                  <h3>6 days</h3>
+                  <h3>Nelson Chen</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+
+          <div class="outer">
+              <div class="buy">
+                  <a href="javascript:;">
+
+BUY</a>
+              </div>
+              <div class="inner">
+                  <h2>FB</h2>
+                  <h3>2 predictions!</h3>
+                  <h3>3 days</h3>
+                  <h3>Calvin Kwong</h3>
+              </div>
+              <div class="sell">
+                  <a href="javascript:;">
+
+SELL</a>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row">
+        <div class="category">
+          <p>Technology</p>
+        </div>
+      <!-- <div class="col-lg-3 col-md-6 col-xs-12"> -->
 
         <div class="outer">
             <div class="buy">
-                <a href="#">BUY</a>
+                <a href="javascript:;">
+
+BUY</a>
             </div>
             <div class="inner">
                 <h2>TSLA</h2>
@@ -72,14 +801,18 @@
                 <h3>Tesla Motors</h3>
             </div>
             <div class="sell">
-                <a href="#">SELL</a>
+                <a href="javascript:;">
+
+SELL</a>
             </div>
         </div>
 
 
         <div class="outer">
             <div class="buy">
-                <a href="#">BUY</a>
+                <a href="javascript:;">
+
+BUY</a>
             </div>
             <div class="inner">
                 <h2>TWTR</h2>
@@ -87,13 +820,17 @@
                 <h3>Twitter</h3>
             </div>
             <div class="sell">
-                <a href="#">SELL</a>
+                <a href="javascript:;">
+
+SELL</a>
             </div>
         </div>
 
         <div class="outer">
             <div class="buy">
-                <a href="#">BUY</a>
+                <a href="javascript:;">
+
+BUY</a>
             </div>
             <div class="inner">
                 <h2>NVDA</h2>
@@ -101,13 +838,17 @@
                 <h3>NVIDIA</h3>
             </div>
             <div class="sell">
-                <a href="#">SELL</a>
+                <a href="javascript:;">
+
+SELL</a>
             </div>
         </div>
 
         <div class="outer">
             <div class="buy">
-                <a href="#">BUY</a>
+                <a href="javascript:;">
+
+BUY</a>
             </div>
             <div class="inner">
                 <h2>AAPL</h2>
@@ -115,13 +856,17 @@
                 <h3>Apple</h3>
             </div>
             <div class="sell">
-                <a href="#">SELL</a>
+                <a href="javascript:;">
+
+SELL</a>
             </div>
         </div>
 
         <div class="outer">
             <div class="buy">
-                <a href="#">BUY</a>
+                <a href="javascript:;">
+
+BUY</a>
             </div>
             <div class="inner">
                 <h2>FB</h2>
@@ -129,11 +874,187 @@
                 <h3>Facebook</h3>
             </div>
             <div class="sell">
-                <a href="#">SELL</a>
+                <a href="javascript:;">
+
+SELL</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="category">
+          <p>Health & Bio</p>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">
+
+BUY</a>
+            </div>
+            <div class="inner">
+                <h2>TSLA</h2>
+                <h2>+10%</h2>
+                <h3>Tesla Motors</h3>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">
+
+SELL</a>
             </div>
         </div>
 
-    </div>
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">
+
+BUY</a>
+            </div>
+            <div class="inner">
+                <h2>TWTR</h2>
+                <h2>-20%</h2>
+                <h3>Twitter</h3>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">
+
+SELL</a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">
+
+BUY</a>
+            </div>
+            <div class="inner">
+                <h2>NVDA</h2>
+                <h2>+27.6%</h2>
+                <h3>NVIDIA</h3>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">
+
+SELL</a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">
+
+BUY</a>
+            </div>
+            <div class="inner">
+                <h2>AAPL</h2>
+                <h2>+5%</h2>
+                <h3>Apple</h3>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">
+
+SELL</a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">
+
+BUY</a>
+            </div>
+            <div class="inner">
+                <h2>FB</h2>
+                <h2>+10%</h2>
+                <h3>Facebook</h3>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">
+
+SELL</a>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="public row">
+        <div class="category">
+          <p>Public Opinion</p>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">BUY</a>
+            </div>
+            <div class="inner">
+                <h2>TSLA</h2>
+                <p>$TSLA and $SCTY merged today. Consensus is good for $SCTY, bad for $TSLA...</p>
+                <p>A.S.</p>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">SELL</a>
+            </div>
+        </div>
+
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">BUY</a>
+            </div>
+            <div class="inner">
+                <h2>TWTR</h2>
+                <p>Nothing good happening in their future. It's a toxic stock that lives with Zynga...</p>
+                <p>A.P.</p>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">SELL</a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">BUY</a>
+            </div>
+            <div class="inner">
+                <h2>NVDA</h2>
+                <p>Verbally double down on NVDA. We are approaching an interesting moment...</p>
+                <p>B.R.</p>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">SELL</a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">BUY</a>
+            </div>
+            <div class="inner">
+                <h2>AAPL</h2>
+                <p>Apple has gone rotten. No compelling products. Tim Cook is a backup QB...</p>
+                <p>P.I.</p>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">SELL</a>
+            </div>
+        </div>
+
+        <div class="outer">
+            <div class="buy">
+                <a href="javascript:;">BUY</a>
+            </div>
+            <div class="inner">
+                <h2>FB</h2>
+                <p>5% on guidance that they can't maintain insane growth. Still a buy...</p>
+                <p>O.P.</p>
+            </div>
+            <div class="sell">
+                <a href="javascript:;">SELL</a>
+            </div>
+        </div>
+
+  </div >
 
 
     <span id="pick_detail">
@@ -165,12 +1086,16 @@
           </div>
       </div> -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 
         <!-- <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"><\/script>')</script> -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+        <!-- slick.js -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -182,6 +1107,9 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
 
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="js/homepage.js"></script>
 
     </body>
 </html>
