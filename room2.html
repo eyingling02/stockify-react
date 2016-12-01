@@ -59,20 +59,20 @@
 
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 
-<body style="margin: 0px;" bgcolor="white" onload="start();">
+<body onload="start();">
 
     <div id="chart">
 
         <table>
             <tbody>
                 <tr valign="top">
-                    <td class="normalText" align="left">
+                    <td class="normalText" align="center">
                         <input name="txtQuote" id="symbol" onkeypress="return CheckEnter(event);" value="YHOO" type="text" />
                         <input name="button" type="button" id="btnQuote" onclick="return SendRequest();" value="Get Quotes" />
                         <br />
                         <span class="smallText">e.g. &quot;YHOO or YHOO GOOG&quot;</span>
 
-                        <div id="service" style="padding:10px 0;">
+                        <div id="service">
                             <!-- <table style="border: 1px solid black;" width="770">
                       <tbody>
                         <tr style="font-size: 14px; font-family: Arial,Helvetica,sans-serif; font-weight: bold;">
@@ -102,16 +102,19 @@
                     </tbody>
                   </table> -->
                             <br />
-                            <img id="imgChart_0" src="stock_chart_yahoo_finance/yhoo.png" border="0" /><br />
-                            <a class="linkText" href='javascript:changeChart(0,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1d_0">1d</span></a>&nbsp;&nbsp;
-                            <a class="linkText" href='javascript:changeChart(1,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5d_0">5d</span></a>&nbsp;&nbsp;
-                            <a class="linkText" href='javascript:changeChart(2,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div3m_0">3m</span></a>&nbsp;&nbsp;
-                            <a class="linkText" href='javascript:changeChart(3,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div6m_0">6m</span></a>&nbsp;&nbsp;
-                            <a class="linkText" href='javascript:changeChart(4,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1y_0">1y</span></a>&nbsp;&nbsp;
-                            <a class="linkText" href='javascript:changeChart(5,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div2y_0">2y</span></a>&nbsp;&nbsp;
-                            <a class="linkText" href='javascript:changeChart(6,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5y_0">5y</span></a>&nbsp;&nbsp;
-                            <a id="link1" class="linkText" href='javascript:changeChart(7,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="divMax_0"><b>msx</b></span></a>
-                            <br />
+
+                            <div id="graph">
+                                <img id="imgChart_0" src="stock_chart_yahoo_finance/yhoo.png" ;> <br/>
+                                <a class="linkText" href='javascript:changeChart(0,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1d_0">1d</span></a>&nbsp;&nbsp;
+                                <a class="linkText" href='javascript:changeChart(1,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5d_0">5d</span></a>&nbsp;&nbsp;
+                                <a class="linkText" href='javascript:changeChart(2,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div3m_0">3m</span></a>&nbsp;&nbsp;
+                                <a class="linkText" href='javascript:changeChart(3,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div6m_0">6m</span></a>&nbsp;&nbsp;
+                                <a class="linkText" href='javascript:changeChart(4,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1y_0">1y</span></a>&nbsp;&nbsp;
+                                <a class="linkText" href='javascript:changeChart(5,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div2y_0">2y</span></a>&nbsp;&nbsp;
+                                <a class="linkText" href='javascript:changeChart(6,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5y_0">5y</span></a>&nbsp;&nbsp;
+                                <a id="link1" class="linkText" href='javascript:changeChart(7,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="divMax_0"><b>msx</b></span></a>
+                                <br />
+                            </div>
                         </div>
                     </td>
                 </tr>
@@ -119,11 +122,18 @@
         </table>
     </div>
 
-    <div id="individual-rss-feed">
+    <div id="highlighted-opinion">
+        <p id="author">Garrett's Opinion</p>
+        <p id="individual-opinion">They will still rake in advertising dollars but it's hiding a big problem in fast decreasing user engagement. The money will still flow for 2016 but they are at a dangerous point because literally my cohort on average have -50% liking and engagement.
+            That is literally FB core design. I know Instagram is still doing well, but I'm pretty sure they will start missing numbers if FB ad revenues underperform. Oculus came at a bad time. The market is bad. People cannot afford $600 oculus + $1000
+            desktop. I haven't heard much from the launch. I know the tech is good, i just don't know if the economy can bear the price point.</p>
+    </div>
+
+
+    <!-- <div id="individual-rss-feed">
         <p>RSS Feed</p>
-        <!-- <img src="img/appl-stock-chart.png" height=300px width=500px> -->
         <div id="individual-news">
-            <a href="http://www.publicnow.com/view/244DCAD683613E5BE332DDA23835574A4645A370">Get Ready: Unreal Engine 4 Support for NVIDIA Ansel Available Now</a>
+            <a href="http://www.publicnow.com/view/244DCAD683613E5BE332DDA23835574A4645A370">Get Ready: Unreal Engine 4 Support for NVIDIA Ansel Available</a>
             <a href="http://www.fool.com/investing/2016/11/15/3-stocks-at-52-week-highs-still-worth-buying.aspx?source=yahoo-2-news&utm_campaign=article&utm_medium=feed&utm_source=yahoo-2-news">3 Stocks at 52-Week Highs Still Worth Buying</a>
             <a href="http://realmoney.thestreet.com/articles/11/15/2016/nvidias-jaw-dropping-quarter-defining-line-sand?puc=yahoo&cm_ven=YAHOO">Nvidia's Jaw-Dropping Quarter Is a Defining Line in the Sand
           </a>
@@ -132,7 +142,8 @@
             <a href="http://realmoney.thestreet.com/articles/11/15/2016/nvidias-jaw-dropping-quarter-defining-line-sand?puc=yahoo&cm_ven=YAHOO">Need to figure out how to word wrap and confine the space
           </a>
         </div>
-    </div>
+    </div> -->
+
 
 </body>
 
