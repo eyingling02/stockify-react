@@ -6,22 +6,20 @@ body
 }
 
 #chart {
-  margin: 2% 5% 1% 5%;
   height: 50%;
+  margin-bottom: 2.5%;
   /*object-fit: cover;*/
 }
-#chart img {
-  height: 50vh;
-  width: 90vw;
-}
 #imgChart_0{
+  margin-left: 12%;
   /*overflow: none;*/
-  text-align: center;
-  /*width: 100%;*/
+  align: center;
+  height: 50vh;
+  width: 80vw;
 }
 
 #highlighted-opinion {
-  margin: 0 5% 0 5%;
+  margin: 0 10% 0 10%;
   align-content: center;
 }
 #opinion-author {
@@ -32,6 +30,18 @@ body
   align-content: center;
   text-align: justify;
   font-size: 1.2em;
+}
+form {
+  margin: 1.5% 0 0 0.5%;
+}
+form input {
+  width: 80%;
+  height: 2.5em;
+  border: 1px solid gray;
+}
+form button {
+  height: 2.5em;
+  border: 1px solid "#E0E0E0";
 }
 
 
