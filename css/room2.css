@@ -7,47 +7,32 @@ body
 
 #chart {
   margin: 2% 5% 1% 5%;
-  /*height: 50%;*/
   height: 50%;
-  /*align-self: center;*/
-  object-fit: cover;
+  /*object-fit: cover;*/
 }
 #chart img {
   height: 50vh;
-  width: 80vw;
-  content: center;
-
+  width: 90vw;
 }
 #imgChart_0{
-  overflow: none;
+  /*overflow: none;*/
   text-align: center;
   /*width: 100%;*/
 }
-#individual-rss-feed {
+
+#highlighted-opinion {
+  margin: 0 5% 0 5%;
   align-content: center;
 }
-#individual-rss-feed p {
+#opinion-author {
   font-size: 1.75em;
+  align-content: center;
 }
-#individual-news {
-  /*width: 50%;*/
+#opinion-content {
+  align-content: center;
+  text-align: justify;
+  font-size: 1.2em;
 }
-#individual-news a {
-  color: #777777;
-  float: left;
-  font-size: 90%;
-  line-height: 300%;
-  font-family: 'Bevan', cursive;
-  margin: 0 0 0 3%;
-  border-bottom: 2px solid #777777;
-  text-decoration: none;
-  padding: 0 1% 0 1%;
-}
-#individual-news a:hover {
-  color: #2c3e50;
-  border-bottom: 2px solid #2c3e50;
-}
-
 
 
 h1
