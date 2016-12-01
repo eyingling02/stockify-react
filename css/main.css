@@ -147,17 +147,14 @@ background-color: #404040;
 
 /*PICK DETAIL*/
 #rss-feed {
-  /*position: relative;*/
-  display: inline-block;
-}
 
+}
 #rss-feed img {
   margin: 0 0 5% 7%;
   border-radius: 15px;
   float: left;
   border: 4px solid white;
 }
-
 
 #news a {
   color: #777777;
