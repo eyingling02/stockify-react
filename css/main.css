@@ -17,7 +17,6 @@
 
 
 body {
-
     /*background-color: #565656;*/
 
     /*milky white*/
@@ -30,6 +29,7 @@ body {
 .navbar {
   background-color: "Transparent";
 }
+
 /*DAILY PICK*/
 #daily_pick {
   text-align: center;
@@ -59,19 +59,7 @@ background-color: #404040;
     overflow: hidden;
     box-shadow: 2px 2px 10px black;
 }
-/*.outer {
-    background-color: #27ae60;
-    position: relative;
-    display: inline-block;
-    height: 18%;
-    width: 15%;
-    border: 3px solid #FFFFFF;
-    border-radius: 35px;
-    margin: 1% 2% 4% 0;
-    text: white;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px black;
-}*/
+
 
 .outer:after {
   content: "";

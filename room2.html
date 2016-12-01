@@ -1,77 +1,79 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <link href="stock_chart_yahoo_finance/styles.css" type="text/css" rel="stylesheet">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta content="Get stock quotes, research investments and read business news that help you manage your financial life." name="description">
-        <meta content="financial Information,investing,investor,market news,stock research,business news,economy,finance,personal finance,quote,loan,student loan,morgage loan,car loan" name="keywords">
-        <meta content="all" name="robots">
+    <link href="stock_chart_yahoo_finance/styles.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="Get stock quotes, research investments and read business news that help you manage your financial life." name="description">
+    <meta content="financial Information,investing,investor,market news,stock research,business news,economy,finance,personal finance,quote,loan,student loan,morgage loan,car loan" name="keywords">
+    <meta content="all" name="robots">
 
 
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-<!-- room2 css -->
-        <link rel="stylesheet" href="css/room2.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- room2 css -->
+    <link rel="stylesheet" href="css/room2.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto|Open+Sans" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-        <script type="text/javascript" src="jquery-1.5.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto|Open+Sans" rel="stylesheet">
 
-<!-- TICKER TAPE -->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                    var symbol='goog';
-                    var callback = function(data) {
-                            var price=data.query.results.span[0].content;
-                            alert('Stock Price: ' + price);
-                        };
+    <!-- <script type="text/javascript" src="jquery-1.5.1.js"></script> -->
 
-                    var url = 'http://query.yahooapis.com/v1/public/yql';
-                    // this is the lovely YQL query (html encoded) which lets us get the stock price:
-                    // select * from html where url="http://finance.yahoo.com/q?s=goog" and xpath='//span[@id="yfs_l10_goog"]'
-                    var data = "q=select%20*%20from%20html%20where%20url%3D%22http%3A%2F%2Ffinance.yahoo.com%2Fq%3Fs%3D" + symbol + "%22%20and%20xpath%3D'%2F%2Fspan%5B%40id%3D%22yfs_l10_" + symbol + "%22%5D'&format=json";
-                    $.getJSON(url, data, callback);
-            });
-        </script>
 
-<!-- Stock Chart -->
-        <script src="js/room2.js"></script>
-    </head>
-    <body>
+    <!-- TICKER TAPE -->
+    <!-- <script type="text/javascript">
+        $(document).ready(function() {
+            var symbol = 'goog';
+            var callback = function(data) {
+                var price = data.query.results.span[0].content;
+                alert('Stock Price: ' + price);
+            };
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            var url = 'http://query.yahooapis.com/v1/public/yql';
+            // this is the lovely YQL query (html encoded) which lets us get the stock price:
+            // select * from html where url="http://finance.yahoo.com/q?s=goog" and xpath='//span[@id="yfs_l10_goog"]'
+            var data = "q=select%20*%20from%20html%20where%20url%3D%22http%3A%2F%2Ffinance.yahoo.com%2Fq%3Fs%3D" + symbol + "%22%20and%20xpath%3D'%2F%2Fspan%5B%40id%3D%22yfs_l10_" + symbol + "%22%5D'&format=json";
+            $.getJSON(url, data, callback);
+        });
+    </script> -->
 
+    <!-- Stock Chart -->
+    <script src="js/room2.js"></script>
 </head>
 
-<body style="margin: 0px;" bgcolor="#678fc2" onload="start();">
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
+<body style="margin: 0px;" bgcolor="white" onload="start();">
 
     <div id="chart">
 
         <table width="90%" border="0" cellpadding="0" cellspacing="0" align="center">
-        <tbody>
-          <tr valign="top">
-            <td class="normalText" align="left">
-                <input name="txtQuote" id="symbol" onkeypress="return CheckEnter(event);" value="YHOO" type="text" />
-                <input name="button" type="button" id="btnQuote" onclick="return SendRequest();" value="Get Quotes" />
-                <br />
-                <span class="smallText">e.g. &quot;YHOO or YHOO GOOG&quot;</span>
+            <tbody>
+                <tr valign="top">
+                    <td class="normalText" align="left">
+                        <input name="txtQuote" id="symbol" onkeypress="return CheckEnter(event);" value="YHOO" type="text" />
+                        <input name="button" type="button" id="btnQuote" onclick="return SendRequest();" value="Get Quotes" />
+                        <br />
+                        <span class="smallText">e.g. &quot;YHOO or YHOO GOOG&quot;</span>
 
-                <div id="service" style="padding:10px 0;">
-                    <!-- <table style="border: 1px solid black;" width="770">
+                        <div id="service" style="padding:10px 0;">
+                            <!-- <table style="border: 1px solid black;" width="770">
                       <tbody>
                         <tr style="font-size: 14px; font-family: Arial,Helvetica,sans-serif; font-weight: bold;">
                             <td>Symbol</td>
@@ -99,37 +101,38 @@
                         </tr>
                     </tbody>
                   </table> -->
-                  <br />
-                  <img id="imgChart_0" src="stock_chart_yahoo_finance/yhoo.png" border="0" /><br />
-                  <a class="linkText" href='javascript:changeChart(0,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1d_0">1d</span></a>&nbsp;&nbsp;
-                  <a class="linkText" href='javascript:changeChart(1,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5d_0">5d</span></a>&nbsp;&nbsp;
-                  <a class="linkText" href='javascript:changeChart(2,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div3m_0">3m</span></a>&nbsp;&nbsp;
-                  <a class="linkText" href='javascript:changeChart(3,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div6m_0">6m</span></a>&nbsp;&nbsp;
-                  <a class="linkText" href='javascript:changeChart(4,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1y_0">1y</span></a>&nbsp;&nbsp;
-                  <a class="linkText" href='javascript:changeChart(5,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div2y_0">2y</span></a>&nbsp;&nbsp;
-                  <a class="linkText" href='javascript:changeChart(6,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5y_0">5y</span></a>&nbsp;&nbsp;
-                  <a id="link1" class="linkText" href='javascript:changeChart(7,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="divMax_0"><b>msx</b></span></a>
-                  <br />
-                </div>
-            </td>
-        </tr>
-        </tbody>
+                            <br />
+                            <img id="imgChart_0" src="stock_chart_yahoo_finance/yhoo.png" border="0" /><br />
+                            <a class="linkText" href='javascript:changeChart(0,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1d_0">1d</span></a>&nbsp;&nbsp;
+                            <a class="linkText" href='javascript:changeChart(1,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5d_0">5d</span></a>&nbsp;&nbsp;
+                            <a class="linkText" href='javascript:changeChart(2,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div3m_0">3m</span></a>&nbsp;&nbsp;
+                            <a class="linkText" href='javascript:changeChart(3,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div6m_0">6m</span></a>&nbsp;&nbsp;
+                            <a class="linkText" href='javascript:changeChart(4,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div1y_0">1y</span></a>&nbsp;&nbsp;
+                            <a class="linkText" href='javascript:changeChart(5,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div2y_0">2y</span></a>&nbsp;&nbsp;
+                            <a class="linkText" href='javascript:changeChart(6,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="div5y_0">5y</span></a>&nbsp;&nbsp;
+                            <a id="link1" class="linkText" href='javascript:changeChart(7,0,%20&quot;y/yhoo&quot;,%20&quot;YHOO&quot;);'><span id="divMax_0"><b>msx</b></span></a>
+                            <br />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-      </div>
-
-      <span id="rss-feed">
-        <img src="img/appl-stock-chart.png" height=300px width=500px>
+    <div id="rss-feed individual">
+        <!-- <img src="img/appl-stock-chart.png" height=300px width=500px> -->
         <div id="news">
-          <a href="http://www.publicnow.com/view/244DCAD683613E5BE332DDA23835574A4645A370">Get Ready: Unreal Engine 4 Support for NVIDIA Ansel Available Now</a>
-          <a href="http://www.fool.com/investing/2016/11/15/3-stocks-at-52-week-highs-still-worth-buying.aspx?source=yahoo-2-news&utm_campaign=article&utm_medium=feed&utm_source=yahoo-2-news">3 Stocks at 52-Week Highs Still Worth Buying</a>
-          <a href="http://realmoney.thestreet.com/articles/11/15/2016/nvidias-jaw-dropping-quarter-defining-line-sand?puc=yahoo&cm_ven=YAHOO">Nvidia's Jaw-Dropping Quarter Is a Defining Line in the Sand
+            <a href="http://www.publicnow.com/view/244DCAD683613E5BE332DDA23835574A4645A370">Get Ready: Unreal Engine 4 Support for NVIDIA Ansel Available Now</a>
+            <a href="http://www.fool.com/investing/2016/11/15/3-stocks-at-52-week-highs-still-worth-buying.aspx?source=yahoo-2-news&utm_campaign=article&utm_medium=feed&utm_source=yahoo-2-news">3 Stocks at 52-Week Highs Still Worth Buying</a>
+            <a href="http://realmoney.thestreet.com/articles/11/15/2016/nvidias-jaw-dropping-quarter-defining-line-sand?puc=yahoo&cm_ven=YAHOO">Nvidia's Jaw-Dropping Quarter Is a Defining Line in the Sand
           </a>
-          <a href="http://www.publicnow.com/view/244DCAD683613E5BE332DDA23835574A4645A370">NVDA going on a massive run, why you should buy now</a>
-          <a href="http://www.fool.com/investing/2016/11/15/3-stocks-at-52-week-highs-still-worth-buying.aspx?source=yahoo-2-news&utm_campaign=article&utm_medium=feed&utm_source=yahoo-2-news">Sleeper pick comes to life, but this spacing CSS sucks</a>
-          <a href="http://realmoney.thestreet.com/articles/11/15/2016/nvidias-jaw-dropping-quarter-defining-line-sand?puc=yahoo&cm_ven=YAHOO">Need to figure out how to word wrap and confine the space
+            <a href="http://www.publicnow.com/view/244DCAD683613E5BE332DDA23835574A4645A370">NVDA going on a massive run, why you should buy now</a>
+            <a href="http://www.fool.com/investing/2016/11/15/3-stocks-at-52-week-highs-still-worth-buying.aspx?source=yahoo-2-news&utm_campaign=article&utm_medium=feed&utm_source=yahoo-2-news">Sleeper pick comes to life, but this spacing CSS sucks</a>
+            <a href="http://realmoney.thestreet.com/articles/11/15/2016/nvidias-jaw-dropping-quarter-defining-line-sand?puc=yahoo&cm_ven=YAHOO">Need to figure out how to word wrap and confine the space
           </a>
         </div>
-      </span>
+    </div>
 
-    </body>
+</body>
+
 </html>
