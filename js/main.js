@@ -43,5 +43,5 @@ $(document).ready( function(){
     // $(inner).children().css("color", "#c5b358")
   })
 
-  var shine = new Shine(document.getElementById('shine'));
+  // var shine = new Shine(document.getElementById('shine'));
 })
