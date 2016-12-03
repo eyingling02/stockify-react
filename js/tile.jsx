@@ -1,21 +1,29 @@
-// const React = require('react')
-// const Tile = (props) => (
-//   <div className='show-card'>
-//     <div className='show-card-text'>
-//       <h3 className='show-card-title'>{props.title}</h3>
-//       <h4 className='show-card-year'>{props.year}</h4>
-//       <p className='show-card-description'>{props.description}</p>
-//     </div>
-//   </div>
-// )
-//
-// const { string } = React.PropTypes
-//
+const React = require('react')
+const Tile = (props) => (
+    <div className='outer'>
+        <div className='buy'>
+            <a href='javascript:;'>BUY</a>
+        </div>
+        <div className='inner'>
+            <a href='livingroom.html' target='_blank'>
+                <h2>{props.days}</h2>
+                <h3>{props.ticker}</h3>
+                <h3>{props.predictions}</h3>
+            </a>
+        </div>
+        <div className='sell'>
+            <a href='javascript:;'>BUY</a>
+        </div>
+    </div>
+)
+
+const {string} = React.PropTypes
+
 // Tile.propTypes = {
 //   title: string.isRequired,
 //   description: string.isRequired,
 //   year: string.isRequired,
 //   poster: string
 // }
-//
-// module.exports = Tile
+
+module.exports = Tile

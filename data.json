@@ -1,42 +1,16 @@
 {
-    "stocks": [{
         "hotstreaks": [{
+            "user_id": 1,
             "user": "Nelson",
             "ticker": "TSLA",
             "predictions": "17",
             "days": "18"
         }, {
+          "user_id": 2,
           "user": "Vic",
           "ticker": "TWTR",
           "predictions": "3",
           "days": "6"
-        }],
-        "favorites": [{
-            "user": "Vic",
-            "ticker": "TSLA",
-            "today_gain_or_loss": "+1.85%",
-            "total_gain_or_loss": "+19.05%",
-            "duration": "5",
-            "num_predictions": "3"
-        }, {
-          "user": "Johnny",
-          "ticker": "NVDA",
-          "today_gain_or_loss": "+6.85%",
-          "total_gain_or_loss": "+10.05%",
-          "duration": "2",
-          "num_predictions": "7"
-        }],
-        "opinions": [{
-            "user": "Jay",
-            "ticker": "TSLA",
-            "opinion": "This stock sucks ipsum lorem"
-        }, {
-          "user": "Nate",
-          "ticker": "GOOG",
-          "opinion": "This stock is amazingggg"
         }]
 
-
-
-    }]
   }

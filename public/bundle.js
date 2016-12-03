@@ -21524,50 +21524,28 @@
 
 	'use strict';
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	var React = __webpack_require__(1);
 
 	var _require = __webpack_require__(179),
 	    Link = _require.Link;
 
-	var data = __webpack_require__(234);
+	var Tile = __webpack_require__(234);
+	var data = __webpack_require__(235);
 
 	var Home = function Home() {
-	  return React.createElement(
-	    'div',
-	    { className: 'outer' },
-	    React.createElement('div', { className: 'buy' }),
-	    React.createElement(
-	      'div',
-	      { className: 'inner' },
-	      data.stocks.map(function (stock) {
-	        return React.createElement(
-	          'a',
-	          { href: 'livingroom.html', target: '_blank' },
-	          React.createElement(
-	            'h2',
-	            null,
-	            ' ',
-	            stock.hotstreaks.days,
-	            ' '
-	          ),
-	          React.createElement(
-	            'h3',
-	            null,
-	            ' ',
-	            stock.hotstreaks.ticker,
-	            ' '
-	          ),
-	          React.createElement(
-	            'h3',
-	            null,
-	            ' ',
-	            stock.hotstreaks.predictions,
-	            ' '
-	          )
-	        );
-	      })
-	    )
-	  );
+	    return React.createElement(
+	        'div',
+	        { className: 'streaks row' },
+	        React.createElement(
+	            'div',
+	            { className: 'category' },
+	            data.hotstreaks.map(function (stock) {
+	                return React.createElement(Tile, _extends({}, stock, { key: stock.user_id }));
+	            })
+	        )
+	    );
 	};
 
 	module.exports = Home;
@@ -26703,55 +26681,89 @@
 
 /***/ },
 /* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var Tile = function Tile(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.days
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.ticker
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.predictions
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// Tile.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = Tile;
+
+/***/ },
+/* 235 */
 /***/ function(module, exports) {
 
 	module.exports = {
-		"stocks": [
+		"hotstreaks": [
 			{
-				"hotstreaks": [
-					{
-						"user": "Nelson",
-						"ticker": "TSLA",
-						"predictions": "17",
-						"days": "18"
-					},
-					{
-						"user": "Vic",
-						"ticker": "TWTR",
-						"predictions": "3",
-						"days": "6"
-					}
-				],
-				"favorites": [
-					{
-						"user": "Vic",
-						"ticker": "TSLA",
-						"today_gain_or_loss": "+1.85%",
-						"total_gain_or_loss": "+19.05%",
-						"duration": "5",
-						"num_predictions": "3"
-					},
-					{
-						"user": "Johnny",
-						"ticker": "NVDA",
-						"today_gain_or_loss": "+6.85%",
-						"total_gain_or_loss": "+10.05%",
-						"duration": "2",
-						"num_predictions": "7"
-					}
-				],
-				"opinions": [
-					{
-						"user": "Jay",
-						"ticker": "TSLA",
-						"opinion": "This stock sucks ipsum lorem"
-					},
-					{
-						"user": "Nate",
-						"ticker": "GOOG",
-						"opinion": "This stock is amazingggg"
-					}
-				]
+				"user_id": 1,
+				"user": "Nelson",
+				"ticker": "TSLA",
+				"predictions": "17",
+				"days": "18"
+			},
+			{
+				"user_id": 2,
+				"user": "Vic",
+				"ticker": "TWTR",
+				"predictions": "3",
+				"days": "6"
 			}
 		]
 	};
