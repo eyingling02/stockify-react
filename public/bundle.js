@@ -21531,8 +21531,10 @@
 	var _require = __webpack_require__(179),
 	    Link = _require.Link;
 
-	var Tile = __webpack_require__(234);
-	var data = __webpack_require__(235);
+	var TileHotStreak = __webpack_require__(234);
+	var TileTrending = __webpack_require__(235);
+
+	var data = __webpack_require__(236);
 
 	var Home = function Home() {
 	  return React.createElement(
@@ -21555,7 +21557,27 @@
 	      'div',
 	      { className: 'regular slider' },
 	      data.Hotstreak.map(function (stock) {
-	        return React.createElement(Tile, _extends({}, stock, { key: stock.UserId }));
+	        return React.createElement(TileHotStreak, _extends({}, stock, { key: stock.UserId }));
+	      })
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'category' },
+	        React.createElement(
+	          'p',
+	          null,
+	          'Trending'
+	        )
+	      )
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'regular slider' },
+	      data.TrendingHigher.map(function (stock) {
+	        return React.createElement(TileTrending, _extends({}, stock, { key: stock.Symbol }));
 	      })
 	    )
 	  );
@@ -26699,7 +26721,7 @@
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var Tile = function Tile(props) {
+	var TileHotStreak = function TileHotStreak(props) {
 	    return React.createElement(
 	        'div',
 	        { className: 'outer' },
@@ -26763,10 +26785,78 @@
 	//   poster: string
 	// }
 
-	module.exports = Tile;
+	module.exports = TileHotStreak;
 
 /***/ },
 /* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileTrending = function TileTrending(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.ChangePercent,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.CompanyName,
+	                    ' days'
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileTrending.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileTrending;
+
+/***/ },
+/* 236 */
 /***/ function(module, exports) {
 
 	module.exports = {
