@@ -21535,17 +21535,30 @@
 	var data = __webpack_require__(235);
 
 	var Home = function Home() {
-	    return React.createElement(
+	  return React.createElement(
+	    'div',
+	    { id: 'picks' },
+	    React.createElement(
+	      'div',
+	      { className: 'streaks row' },
+	      React.createElement(
 	        'div',
-	        { className: 'streaks row' },
+	        { className: 'category' },
 	        React.createElement(
-	            'div',
-	            { className: 'category' },
-	            data.hotstreaks.map(function (stock) {
-	                return React.createElement(Tile, _extends({}, stock, { key: stock.user_id }));
-	            })
+	          'p',
+	          null,
+	          'Hot Streaks'
 	        )
-	    );
+	      )
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'regular slider' },
+	      data.Hotstreak.map(function (stock) {
+	        return React.createElement(Tile, _extends({}, stock, { key: stock.UserId }));
+	      })
+	    )
+	  );
 	};
 
 	module.exports = Home;
@@ -26708,17 +26721,24 @@
 	                React.createElement(
 	                    'h2',
 	                    null,
-	                    props.days
+	                    props.Ticker
 	                ),
 	                React.createElement(
 	                    'h3',
 	                    null,
-	                    props.ticker
+	                    props.StreakInDays,
+	                    ' predictions!'
 	                ),
 	                React.createElement(
 	                    'h3',
 	                    null,
-	                    props.predictions
+	                    props.PredictionCount,
+	                    ' days'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.Username
 	                )
 	            )
 	        ),
@@ -26728,7 +26748,7 @@
 	            React.createElement(
 	                'a',
 	                { href: 'javascript:;' },
-	                'BUY'
+	                'SELL'
 	            )
 	        )
 	    );
@@ -26750,20 +26770,195 @@
 /***/ function(module, exports) {
 
 	module.exports = {
-		"hotstreaks": [
+		"Hotstreak": [
 			{
-				"user_id": 1,
-				"user": "Nelson",
-				"ticker": "TSLA",
-				"predictions": "17",
-				"days": "18"
+				"UserId": 1,
+				"Username": "thevictorchen",
+				"Ticker": "GILD",
+				"PredictionCount": 4,
+				"StreakInDays": 8
 			},
 			{
-				"user_id": 2,
-				"user": "Vic",
-				"ticker": "TWTR",
-				"predictions": "3",
-				"days": "6"
+				"UserId": 2,
+				"Username": "erica",
+				"Ticker": "AMZN",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			},
+			{
+				"UserId": 3,
+				"Username": "thenelson",
+				"Ticker": "GILD",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			},
+			{
+				"UserId": 4,
+				"Username": "thenelson",
+				"Ticker": "AMZN",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			},
+			{
+				"UserId": 5,
+				"Username": "erica",
+				"Ticker": "AMZN",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			}
+		],
+		"TrendingHigher": [
+			{
+				"Symbol": "S",
+				"ChangePercent": 8.94,
+				"CompanyName": "Sprint Corporation"
+			},
+			{
+				"Symbol": "TWTR",
+				"ChangePercent": 6.86,
+				"CompanyName": "Twitter"
+			},
+			{
+				"Symbol": "VLO",
+				"ChangePercent": 4.36,
+				"CompanyName": "Valero Energy Corporation Commo"
+			},
+			{
+				"Symbol": "X",
+				"ChangePercent": 4.28,
+				"CompanyName": "United States Steel"
+			},
+			{
+				"Symbol": "JCP",
+				"ChangePercent": 4.19,
+				"CompanyName": "J.C. Penney Company"
+			},
+			{
+				"Symbol": "CBS",
+				"ChangePercent": 4.05,
+				"CompanyName": "CBS Corporation Class B Common"
+			},
+			{
+				"Symbol": "F",
+				"ChangePercent": 3.98,
+				"CompanyName": "Ford Motor Company"
+			},
+			{
+				"Symbol": "AEO",
+				"ChangePercent": 3.96,
+				"CompanyName": "American Eagle Outfitters"
+			},
+			{
+				"Symbol": "TSLA",
+				"ChangePercent": 3.93,
+				"CompanyName": "Tesla Motors"
+			},
+			{
+				"Symbol": "LGF",
+				"ChangePercent": 3.69,
+				"CompanyName": "Lions Gate Entertainment Corpor"
+			},
+			{
+				"Symbol": "GRPN",
+				"ChangePercent": 3.66,
+				"CompanyName": "Groupon"
+			},
+			{
+				"Symbol": "GM",
+				"ChangePercent": 3.51,
+				"CompanyName": "General Motors Company Common S"
+			},
+			{
+				"Symbol": "DAL",
+				"ChangePercent": 3.38,
+				"CompanyName": "Delta Air Lines"
+			},
+			{
+				"Symbol": "BBY",
+				"ChangePercent": 3.37,
+				"CompanyName": "Best Buy Co."
+			},
+			{
+				"Symbol": "MA",
+				"ChangePercent": 3.19,
+				"CompanyName": "Mastercard Incorporated Common"
+			}
+		],
+		"TrendingLower": [
+			{
+				"Symbol": "UAA",
+				"ChangePercent": null,
+				"CompanyName": "Under Armour"
+			},
+			{
+				"Symbol": "AMC",
+				"ChangePercent": -3.4,
+				"CompanyName": "AMC Entertainment Holdings"
+			},
+			{
+				"Symbol": "PRDSY",
+				"ChangePercent": -1.75,
+				"CompanyName": ""
+			},
+			{
+				"Symbol": "BMY",
+				"ChangePercent": -1.37,
+				"CompanyName": "Bristol-Myers Squibb Company Co"
+			},
+			{
+				"Symbol": "PFE",
+				"ChangePercent": -1.17,
+				"CompanyName": "Pfizer"
+			},
+			{
+				"Symbol": "PFE",
+				"ChangePercent": -1.17,
+				"CompanyName": "Pfizer"
+			},
+			{
+				"Symbol": "WDAY",
+				"ChangePercent": -1.09,
+				"CompanyName": "Workday"
+			},
+			{
+				"Symbol": "HAL",
+				"ChangePercent": -0.89,
+				"CompanyName": "Halliburton Company"
+			},
+			{
+				"Symbol": "BAH",
+				"ChangePercent": -0.87,
+				"CompanyName": "Booz Allen Hamilton Holding Cor"
+			},
+			{
+				"Symbol": "JNJ",
+				"ChangePercent": -0.86,
+				"CompanyName": "Johnson & Johnson"
+			},
+			{
+				"Symbol": "DWA",
+				"ChangePercent": 0,
+				"CompanyName": "Dreamworks Animation Skg"
+			},
+			{
+				"Symbol": "FGNT",
+				"ChangePercent": 0,
+				"CompanyName": ""
+			},
+			{
+				"Symbol": "BRK",
+				"ChangePercent": 0.03,
+				"CompanyName": ""
+			},
+			{
+				"Symbol": "TWX",
+				"ChangePercent": 0.09,
+				"CompanyName": "Time Warner Inc. New"
+			},
+			{
+				"Symbol": "MDT",
+				"ChangePercent": 0.15,
+				"CompanyName": "Medtronic plc. Ordinary Shares"
 			}
 		]
 	};

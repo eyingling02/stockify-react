@@ -4,11 +4,16 @@ const Tile = require('./tile')
 const data = require('../data')
 
 const Home = () => (
+  <div id="picks">
     <div className="streaks row">
-        <div className="category">
-            {data.hotstreaks.map((stock) => (<Tile {...stock} key={stock.user_id} />))}
-        </div>
+      <div className="category">
+          <p>Hot Streaks</p>
+      </div>
     </div>
+    <div className="regular slider">
+      {data.Hotstreak.map((stock) => (<Tile {...stock} key={stock.UserId} />))}
+    </div>
+  </div>
 )
 
 module.exports = Home

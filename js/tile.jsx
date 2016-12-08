@@ -6,13 +6,14 @@ const Tile = (props) => (
         </div>
         <div className='inner'>
             <a href='livingroom.html' target='_blank'>
-                <h2>{props.days}</h2>
-                <h3>{props.ticker}</h3>
-                <h3>{props.predictions}</h3>
+                <h2>{props.Ticker}</h2>
+                <h3>{props.StreakInDays} predictions!</h3>
+                <h3>{props.PredictionCount} days</h3>
+                <h3>{props.Username}</h3>
             </a>
         </div>
         <div className='sell'>
-            <a href='javascript:;'>BUY</a>
+            <a href='javascript:;'>SELL</a>
         </div>
     </div>
 )
