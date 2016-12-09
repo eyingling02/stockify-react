@@ -21533,8 +21533,11 @@
 
 	var TileHotStreak = __webpack_require__(234);
 	var TileTrending = __webpack_require__(235);
+	var TileMyFavorites = __webpack_require__(236);
+	var TileFriendsOpinions = __webpack_require__(237);
+	var TileCategory = __webpack_require__(238);
 
-	var data = __webpack_require__(236);
+	var data = __webpack_require__(239);
 
 	var Home = function Home() {
 	  return React.createElement(
@@ -21578,6 +21581,66 @@
 	      { className: 'regular slider' },
 	      data.TrendingHigher.map(function (stock) {
 	        return React.createElement(TileTrending, _extends({}, stock, { key: stock.Symbol }));
+	      })
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'category' },
+	        React.createElement(
+	          'p',
+	          null,
+	          'My Favorites'
+	        )
+	      )
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'regular slider' },
+	      data.MyFavorites.map(function (stock) {
+	        return React.createElement(TileMyFavorites, _extends({}, stock, { key: stock.Symbol }));
+	      })
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'category' },
+	        React.createElement(
+	          'p',
+	          null,
+	          'Friends Opinions'
+	        )
+	      )
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'regular slider' },
+	      data.FriendsOpinions.map(function (stock) {
+	        return React.createElement(TileFriendsOpinions, _extends({}, stock, { key: stock.UserId }));
+	      })
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'category' },
+	        React.createElement(
+	          'p',
+	          null,
+	          'Industry: Tech'
+	        )
+	      )
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'regular slider' },
+	      data.Category.map(function (stock) {
+	        return React.createElement(TileCategory, _extends({}, stock, { key: stock.Symbol }));
 	      })
 	    )
 	  );
@@ -26857,6 +26920,214 @@
 
 /***/ },
 /* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileMyFavorites = function TileMyFavorites(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.TodayGainLoss,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.TotalGainLoss,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.Duration,
+	                    ' days'
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileTrending.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileMyFavorites;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileFriendsOpinions = function TileFriendsOpinions(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.Opinion
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.Username
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileTrending.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileFriendsOpinions;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileCategory = function TileCategory(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.ChangePercent,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.CompanyName,
+	                    ' days'
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileCategory.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileCategory;
+
+/***/ },
+/* 239 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -26977,7 +27248,7 @@
 		"TrendingLower": [
 			{
 				"Symbol": "UAA",
-				"ChangePercent": null,
+				"ChangePercent": -6.8,
 				"CompanyName": "Under Armour"
 			},
 			{
@@ -27033,12 +27304,12 @@
 			{
 				"Symbol": "FGNT",
 				"ChangePercent": 0,
-				"CompanyName": ""
+				"CompanyName": "Fire"
 			},
 			{
 				"Symbol": "BRK",
 				"ChangePercent": 0.03,
-				"CompanyName": ""
+				"CompanyName": "BurgerKing"
 			},
 			{
 				"Symbol": "TWX",
@@ -27049,6 +27320,107 @@
 				"Symbol": "MDT",
 				"ChangePercent": 0.15,
 				"CompanyName": "Medtronic plc. Ordinary Shares"
+			}
+		],
+		"MyFavorites": [
+			{
+				"UserId": 1,
+				"Symbol": "UA",
+				"TodayGainLoss": 1.29,
+				"TotalGainLoss": 15.45,
+				"Duration": 100
+			},
+			{
+				"UserId": 2,
+				"Symbol": "FB",
+				"TodayGainLoss": 4.5,
+				"TotalGainLoss": 5.45,
+				"Duration": 56
+			},
+			{
+				"UserId": 3,
+				"Symbol": "NVDA",
+				"TodayGainLoss": 1.21,
+				"TotalGainLoss": 25.54,
+				"Duration": 12
+			},
+			{
+				"UserId": 2,
+				"Symbol": "MDT",
+				"TodayGainLoss": 4.5,
+				"TotalGainLoss": 5.45,
+				"Duration": 56
+			},
+			{
+				"UserId": 3,
+				"Symbol": "TWX",
+				"TodayGainLoss": 1.21,
+				"TotalGainLoss": 25.54,
+				"Duration": 12
+			}
+		],
+		"FriendsOpinions": [
+			{
+				"UserId": 1,
+				"Symbol": "UA",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 2,
+				"Symbol": "FB",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 3,
+				"Symbol": "NVDA",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 4,
+				"Symbol": "MDT",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 5,
+				"Symbol": "TWX",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			}
+		],
+		"Category": [
+			{
+				"Industry": "Tech",
+				"Symbol": "S",
+				"ChangePercent": 8.94,
+				"CompanyName": "Sprint Corporation"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "TWTR",
+				"ChangePercent": 6.86,
+				"CompanyName": "Twitter"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "VLO",
+				"ChangePercent": 4.36,
+				"CompanyName": "Valero Energy Corporation Commo"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "X",
+				"ChangePercent": 4.28,
+				"CompanyName": "United States Steel"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "JCP",
+				"ChangePercent": 4.19,
+				"CompanyName": "J.C. Penney Company"
 			}
 		]
 	};
