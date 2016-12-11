@@ -21526,6 +21526,14 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(1);
 
 	var _require = __webpack_require__(179),
@@ -21539,112 +21547,123 @@
 
 	var data = __webpack_require__(239);
 
-	var Home = function Home() {
-	  return React.createElement(
-	    'div',
-	    { id: 'picks' },
-	    React.createElement(
-	      'div',
-	      { className: 'streaks row' },
-	      React.createElement(
-	        'div',
-	        { className: 'category' },
-	        React.createElement(
-	          'p',
-	          null,
-	          'Hot Streaks'
-	        )
-	      )
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'regular slider' },
-	      data.Hotstreak.map(function (stock) {
-	        return React.createElement(TileHotStreak, _extends({}, stock, { key: stock.UserId }));
-	      })
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'row' },
-	      React.createElement(
-	        'div',
-	        { className: 'category' },
-	        React.createElement(
-	          'p',
-	          null,
-	          'Trending'
-	        )
-	      )
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'regular slider' },
-	      data.TrendingHigher.map(function (stock) {
-	        return React.createElement(TileTrending, _extends({}, stock, { key: stock.Symbol }));
-	      })
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'row' },
-	      React.createElement(
-	        'div',
-	        { className: 'category' },
-	        React.createElement(
-	          'p',
-	          null,
-	          'My Favorites'
-	        )
-	      )
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'regular slider' },
-	      data.MyFavorites.map(function (stock) {
-	        return React.createElement(TileMyFavorites, _extends({}, stock, { key: stock.Symbol }));
-	      })
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'row' },
-	      React.createElement(
-	        'div',
-	        { className: 'category' },
-	        React.createElement(
-	          'p',
-	          null,
-	          'Friends Opinions'
-	        )
-	      )
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'regular slider' },
-	      data.FriendsOpinions.map(function (stock) {
-	        return React.createElement(TileFriendsOpinions, _extends({}, stock, { key: stock.UserId }));
-	      })
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'row' },
-	      React.createElement(
-	        'div',
-	        { className: 'category' },
-	        React.createElement(
-	          'p',
-	          null,
-	          'Industry: Tech'
-	        )
-	      )
-	    ),
-	    React.createElement(
-	      'div',
-	      { className: 'regular slider' },
-	      data.Category.map(function (stock) {
-	        return React.createElement(TileCategory, _extends({}, stock, { key: stock.Symbol }));
-	      })
-	    )
-	  );
-	};
+	var Home = function (_React$Component) {
+	    _inherits(Home, _React$Component);
+
+	    function Home() {
+	        _classCallCheck(this, Home);
+
+	        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	    }
+
+	    _createClass(Home, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                'div',
+	                { id: 'picks' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'streaks row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Hot Streaks'
+	                        )
+	                    ),
+	                    data.Hotstreak.map(function (stock) {
+	                        return React.createElement(TileHotStreak, _extends({}, stock, { key: stock.UserId }));
+	                    })
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Trending'
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular slider' },
+	                        data.TrendingHigher.map(function (stock) {
+	                            return React.createElement(TileTrending, _extends({}, stock, { key: stock.Symbol }));
+	                        })
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'My Favorites'
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'regular slider' },
+	                    data.MyFavorites.map(function (stock) {
+	                        return React.createElement(TileMyFavorites, _extends({}, stock, { key: stock.Symbol }));
+	                    })
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Friends Opinions'
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'regular slider' },
+	                    data.FriendsOpinions.map(function (stock) {
+	                        return React.createElement(TileFriendsOpinions, _extends({}, stock, { key: stock.UserId }));
+	                    })
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Industry: Technology'
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'regular slider' },
+	                    data.Category.map(function (stock) {
+	                        return React.createElement(TileCategory, _extends({}, stock, { key: stock.Symbol }));
+	                    })
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Home;
+	}(React.Component);
 
 	module.exports = Home;
 
@@ -26882,7 +26901,7 @@
 	                    props.Symbol
 	                ),
 	                React.createElement(
-	                    'h3',
+	                    'h2',
 	                    null,
 	                    props.ChangePercent,
 	                    '%'
@@ -26950,19 +26969,19 @@
 	                    props.Symbol
 	                ),
 	                React.createElement(
-	                    'h3',
+	                    'p',
 	                    null,
 	                    props.TodayGainLoss,
 	                    '%'
 	                ),
 	                React.createElement(
-	                    'h3',
+	                    'p',
 	                    null,
 	                    props.TotalGainLoss,
 	                    '%'
 	                ),
 	                React.createElement(
-	                    'h3',
+	                    'p',
 	                    null,
 	                    props.Duration,
 	                    ' days'
@@ -27024,12 +27043,12 @@
 	                    props.Symbol
 	                ),
 	                React.createElement(
-	                    'h3',
+	                    'p',
 	                    null,
 	                    props.Opinion
 	                ),
 	                React.createElement(
-	                    'h3',
+	                    'p',
 	                    null,
 	                    props.Username
 	                )
@@ -27090,7 +27109,7 @@
 	                    props.Symbol
 	                ),
 	                React.createElement(
-	                    'h3',
+	                    'h2',
 	                    null,
 	                    props.ChangePercent,
 	                    '%'

@@ -7,8 +7,8 @@ const TileFriendsOpinions = (props) => (
         <div className='inner'>
             <a href='livingroom.html' target='_blank'>
                 <h2>{props.Symbol}</h2>
-                <h3>{props.Opinion}</h3>
-                <h3>{props.Username}</h3>
+                <p>{props.Opinion}</p>
+                <p>{props.Username}</p>
             </a>
         </div>
         <div className='sell'>

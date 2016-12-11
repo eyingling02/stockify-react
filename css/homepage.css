@@ -34,7 +34,7 @@ body {
 }
 
 /*SLICK*/
-.slider {
+/*.slider {
         width: 100%;
         margin: 0;
     }
@@ -50,7 +50,7 @@ body {
 .slick-prev:before,
 .slick-next:before {
     color: black;
-}
+}*/
 
 /* HEADERS */
 .category {
@@ -67,14 +67,14 @@ body {
   padding-left: 10px;
 }
 
-.streaks .outer .inner h3:last-child {
+.streaks > .outer > .inner > a > h3:last-child {
   font-size: 1.5em;
 }
-.streaks .outer .inner h3 {
+.streaks > .outer > .inner > a > h3 {
   font-size: 1.3em;
   margin: 0 0 8px 0;
 }
-.public .outer .inner p:last-child {
+.public .outer .inner a > p:last-child {
   font-size: 1.5em;
 }
 
@@ -182,7 +182,6 @@ background-color: #404040;
   /*text-align: "justify";*/
   font-size: 1.2em;
   margin-bottom: 30px;
-  font-style: italic;
 }
 .inner a:hover {
      color: white;

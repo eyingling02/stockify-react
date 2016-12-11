@@ -7,9 +7,9 @@ const TileMyFavorites = (props) => (
         <div className='inner'>
             <a href='livingroom.html' target='_blank'>
                 <h2>{props.Symbol}</h2>
-                <h3>{props.TodayGainLoss}%</h3>
-                <h3>{props.TotalGainLoss}%</h3>
-                <h3>{props.Duration} days</h3>
+                <p>{props.TodayGainLoss}%</p>
+                <p>{props.TotalGainLoss}%</p>
+                <p>{props.Duration} days</p>
             </a>
         </div>
         <div className='sell'>
