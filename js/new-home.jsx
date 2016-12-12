@@ -16,15 +16,15 @@ class Home extends React.Component {
                     <div className="category">
                         <p>Hot Streaks</p>
                     </div>
-                    <div className="regular slider">
+                    <div className="regular">
                         {data.Hotstreak.map((stock) => (<TileHotStreak {...stock} key={stock.UserId}/>))}
                     </div>
                </div>
-                <div className="row slider">
+                <div className="row">
                     <div className="category">
                         <p>Trending</p>
                     </div>
-                    <div className="regular">
+                    <div className="regular slider">
                       {data.TrendingHigher.map((stock) => (<TileTrending {...stock} key={stock.Symbol}/>))}
                     </div>
                 </div>
@@ -32,7 +32,7 @@ class Home extends React.Component {
                     <div className="category">
                         <p>My Favorites</p>
                     </div>
-                    <div className="regular slider">
+                    <div className="regular">
                       {data.MyFavorites.map((stock) => (<TileMyFavorites {...stock} key={stock.Symbol}/>))}
                     </div>
                 </div>
@@ -40,7 +40,7 @@ class Home extends React.Component {
                     <div className="category">
                         <p>Friends Opinions</p>
                     </div>
-                    <div className="regular slider">
+                    <div className="regular">
                       {data.FriendsOpinions.map((stock) => (<TileFriendsOpinions {...stock} key={stock.UserId}/>))}
                     </div>
                 </div>
@@ -48,7 +48,7 @@ class Home extends React.Component {
                     <div className="category">
                         <p>Industry: Technology</p>
                     </div>
-                    <div className="regular slider">
+                    <div className="regular">
                       {data.Category.map((stock) => (<TileCategory {...stock} key={stock.Symbol}/>))}
                     </div>
                 </div>

@@ -21564,7 +21564,7 @@
 	                { id: 'picks' },
 	                React.createElement(
 	                    'div',
-	                    { className: 'streaks row' },
+	                    { className: 'streaks' },
 	                    React.createElement(
 	                        'div',
 	                        { className: 'category' },
@@ -21574,9 +21574,13 @@
 	                            'Hot Streaks'
 	                        )
 	                    ),
-	                    data.Hotstreak.map(function (stock) {
-	                        return React.createElement(TileHotStreak, _extends({}, stock, { key: stock.UserId }));
-	                    })
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.Hotstreak.map(function (stock) {
+	                            return React.createElement(TileHotStreak, _extends({}, stock, { key: stock.UserId }));
+	                        })
+	                    )
 	                ),
 	                React.createElement(
 	                    'div',
@@ -21609,14 +21613,14 @@
 	                            null,
 	                            'My Favorites'
 	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.MyFavorites.map(function (stock) {
+	                            return React.createElement(TileMyFavorites, _extends({}, stock, { key: stock.Symbol }));
+	                        })
 	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'regular slider' },
-	                    data.MyFavorites.map(function (stock) {
-	                        return React.createElement(TileMyFavorites, _extends({}, stock, { key: stock.Symbol }));
-	                    })
 	                ),
 	                React.createElement(
 	                    'div',
@@ -21629,14 +21633,14 @@
 	                            null,
 	                            'Friends Opinions'
 	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.FriendsOpinions.map(function (stock) {
+	                            return React.createElement(TileFriendsOpinions, _extends({}, stock, { key: stock.UserId }));
+	                        })
 	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'regular slider' },
-	                    data.FriendsOpinions.map(function (stock) {
-	                        return React.createElement(TileFriendsOpinions, _extends({}, stock, { key: stock.UserId }));
-	                    })
 	                ),
 	                React.createElement(
 	                    'div',
@@ -21649,14 +21653,14 @@
 	                            null,
 	                            'Industry: Technology'
 	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.Category.map(function (stock) {
+	                            return React.createElement(TileCategory, _extends({}, stock, { key: stock.Symbol }));
+	                        })
 	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'regular slider' },
-	                    data.Category.map(function (stock) {
-	                        return React.createElement(TileCategory, _extends({}, stock, { key: stock.Symbol }));
-	                    })
 	                )
 	            );
 	        }
