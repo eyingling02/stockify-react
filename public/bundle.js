@@ -21524,51 +21524,150 @@
 
 	'use strict';
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(1);
 
 	var _require = __webpack_require__(179),
 	    Link = _require.Link;
 
-	var data = __webpack_require__(234);
+	var TileHotStreak = __webpack_require__(234);
+	var TileTrending = __webpack_require__(235);
+	var TileMyFavorites = __webpack_require__(236);
+	var TileFriendsOpinions = __webpack_require__(237);
+	var TileCategory = __webpack_require__(238);
 
-	var Home = function Home() {
-	  return React.createElement(
-	    'div',
-	    { className: 'outer' },
-	    React.createElement('div', { className: 'buy' }),
-	    React.createElement(
-	      'div',
-	      { className: 'inner' },
-	      data.stocks.map(function (stock) {
-	        return React.createElement(
-	          'a',
-	          { href: 'livingroom.html', target: '_blank' },
-	          React.createElement(
-	            'h2',
-	            null,
-	            ' ',
-	            stock.hotstreaks.days,
-	            ' '
-	          ),
-	          React.createElement(
-	            'h3',
-	            null,
-	            ' ',
-	            stock.hotstreaks.ticker,
-	            ' '
-	          ),
-	          React.createElement(
-	            'h3',
-	            null,
-	            ' ',
-	            stock.hotstreaks.predictions,
-	            ' '
-	          )
-	        );
-	      })
-	    )
-	  );
-	};
+	var data = __webpack_require__(239);
+
+	var Home = function (_React$Component) {
+	    _inherits(Home, _React$Component);
+
+	    function Home() {
+	        _classCallCheck(this, Home);
+
+	        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	    }
+
+	    _createClass(Home, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                'div',
+	                { id: 'picks' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'streaks' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Hot Streaks'
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.Hotstreak.map(function (stock) {
+	                            return React.createElement(TileHotStreak, _extends({}, stock, { key: stock.UserId }));
+	                        })
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Trending'
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular slider' },
+	                        data.TrendingHigher.map(function (stock) {
+	                            return React.createElement(TileTrending, _extends({}, stock, { key: stock.Symbol }));
+	                        })
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'My Favorites'
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.MyFavorites.map(function (stock) {
+	                            return React.createElement(TileMyFavorites, _extends({}, stock, { key: stock.Symbol }));
+	                        })
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Friends Opinions'
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.FriendsOpinions.map(function (stock) {
+	                            return React.createElement(TileFriendsOpinions, _extends({}, stock, { key: stock.UserId }));
+	                        })
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'category' },
+	                        React.createElement(
+	                            'p',
+	                            null,
+	                            'Industry: Technology'
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'regular' },
+	                        data.Category.map(function (stock) {
+	                            return React.createElement(TileCategory, _extends({}, stock, { key: stock.Symbol }));
+	                        })
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Home;
+	}(React.Component);
 
 	module.exports = Home;
 
@@ -26703,55 +26802,648 @@
 
 /***/ },
 /* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileHotStreak = function TileHotStreak(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Ticker
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.StreakInDays,
+	                    ' predictions!'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.PredictionCount,
+	                    ' days'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.Username
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// Tile.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileHotStreak;
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileTrending = function TileTrending(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.ChangePercent,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.CompanyName,
+	                    ' days'
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileTrending.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileTrending;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileMyFavorites = function TileMyFavorites(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'p',
+	                    null,
+	                    props.TodayGainLoss,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'p',
+	                    null,
+	                    props.TotalGainLoss,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'p',
+	                    null,
+	                    props.Duration,
+	                    ' days'
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileTrending.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileMyFavorites;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileFriendsOpinions = function TileFriendsOpinions(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'p',
+	                    null,
+	                    props.Opinion
+	                ),
+	                React.createElement(
+	                    'p',
+	                    null,
+	                    props.Username
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileTrending.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileFriendsOpinions;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TileCategory = function TileCategory(props) {
+	    return React.createElement(
+	        'div',
+	        { className: 'outer' },
+	        React.createElement(
+	            'div',
+	            { className: 'buy' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'BUY'
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'inner' },
+	            React.createElement(
+	                'a',
+	                { href: 'livingroom.html', target: '_blank' },
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.Symbol
+	                ),
+	                React.createElement(
+	                    'h2',
+	                    null,
+	                    props.ChangePercent,
+	                    '%'
+	                ),
+	                React.createElement(
+	                    'h3',
+	                    null,
+	                    props.CompanyName,
+	                    ' days'
+	                )
+	            )
+	        ),
+	        React.createElement(
+	            'div',
+	            { className: 'sell' },
+	            React.createElement(
+	                'a',
+	                { href: 'javascript:;' },
+	                'SELL'
+	            )
+	        )
+	    );
+	};
+
+	var string = React.PropTypes.string;
+
+	// TileCategory.propTypes = {
+	//   title: string.isRequired,
+	//   description: string.isRequired,
+	//   year: string.isRequired,
+	//   poster: string
+	// }
+
+	module.exports = TileCategory;
+
+/***/ },
+/* 239 */
 /***/ function(module, exports) {
 
 	module.exports = {
-		"stocks": [
+		"Hotstreak": [
 			{
-				"hotstreaks": [
-					{
-						"user": "Nelson",
-						"ticker": "TSLA",
-						"predictions": "17",
-						"days": "18"
-					},
-					{
-						"user": "Vic",
-						"ticker": "TWTR",
-						"predictions": "3",
-						"days": "6"
-					}
-				],
-				"favorites": [
-					{
-						"user": "Vic",
-						"ticker": "TSLA",
-						"today_gain_or_loss": "+1.85%",
-						"total_gain_or_loss": "+19.05%",
-						"duration": "5",
-						"num_predictions": "3"
-					},
-					{
-						"user": "Johnny",
-						"ticker": "NVDA",
-						"today_gain_or_loss": "+6.85%",
-						"total_gain_or_loss": "+10.05%",
-						"duration": "2",
-						"num_predictions": "7"
-					}
-				],
-				"opinions": [
-					{
-						"user": "Jay",
-						"ticker": "TSLA",
-						"opinion": "This stock sucks ipsum lorem"
-					},
-					{
-						"user": "Nate",
-						"ticker": "GOOG",
-						"opinion": "This stock is amazingggg"
-					}
-				]
+				"UserId": 1,
+				"Username": "thevictorchen",
+				"Ticker": "GILD",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			},
+			{
+				"UserId": 2,
+				"Username": "erica",
+				"Ticker": "AMZN",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			},
+			{
+				"UserId": 3,
+				"Username": "thenelson",
+				"Ticker": "GILD",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			},
+			{
+				"UserId": 4,
+				"Username": "thenelson",
+				"Ticker": "AMZN",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			},
+			{
+				"UserId": 5,
+				"Username": "erica",
+				"Ticker": "AMZN",
+				"PredictionCount": 4,
+				"StreakInDays": 8
+			}
+		],
+		"TrendingHigher": [
+			{
+				"Symbol": "S",
+				"ChangePercent": 8.94,
+				"CompanyName": "Sprint Corporation"
+			},
+			{
+				"Symbol": "TWTR",
+				"ChangePercent": 6.86,
+				"CompanyName": "Twitter"
+			},
+			{
+				"Symbol": "VLO",
+				"ChangePercent": 4.36,
+				"CompanyName": "Valero Energy Corporation Commo"
+			},
+			{
+				"Symbol": "X",
+				"ChangePercent": 4.28,
+				"CompanyName": "United States Steel"
+			},
+			{
+				"Symbol": "JCP",
+				"ChangePercent": 4.19,
+				"CompanyName": "J.C. Penney Company"
+			},
+			{
+				"Symbol": "CBS",
+				"ChangePercent": 4.05,
+				"CompanyName": "CBS Corporation Class B Common"
+			},
+			{
+				"Symbol": "F",
+				"ChangePercent": 3.98,
+				"CompanyName": "Ford Motor Company"
+			},
+			{
+				"Symbol": "AEO",
+				"ChangePercent": 3.96,
+				"CompanyName": "American Eagle Outfitters"
+			},
+			{
+				"Symbol": "TSLA",
+				"ChangePercent": 3.93,
+				"CompanyName": "Tesla Motors"
+			},
+			{
+				"Symbol": "LGF",
+				"ChangePercent": 3.69,
+				"CompanyName": "Lions Gate Entertainment Corpor"
+			},
+			{
+				"Symbol": "GRPN",
+				"ChangePercent": 3.66,
+				"CompanyName": "Groupon"
+			},
+			{
+				"Symbol": "GM",
+				"ChangePercent": 3.51,
+				"CompanyName": "General Motors Company Common S"
+			},
+			{
+				"Symbol": "DAL",
+				"ChangePercent": 3.38,
+				"CompanyName": "Delta Air Lines"
+			},
+			{
+				"Symbol": "BBY",
+				"ChangePercent": 3.37,
+				"CompanyName": "Best Buy Co."
+			},
+			{
+				"Symbol": "MA",
+				"ChangePercent": 3.19,
+				"CompanyName": "Mastercard Incorporated Common"
+			}
+		],
+		"TrendingLower": [
+			{
+				"Symbol": "UAA",
+				"ChangePercent": -6.8,
+				"CompanyName": "Under Armour"
+			},
+			{
+				"Symbol": "AMC",
+				"ChangePercent": -3.4,
+				"CompanyName": "AMC Entertainment Holdings"
+			},
+			{
+				"Symbol": "PRDSY",
+				"ChangePercent": -1.75,
+				"CompanyName": ""
+			},
+			{
+				"Symbol": "BMY",
+				"ChangePercent": -1.37,
+				"CompanyName": "Bristol-Myers Squibb Company Co"
+			},
+			{
+				"Symbol": "PFE",
+				"ChangePercent": -1.17,
+				"CompanyName": "Pfizer"
+			},
+			{
+				"Symbol": "PFE",
+				"ChangePercent": -1.17,
+				"CompanyName": "Pfizer"
+			},
+			{
+				"Symbol": "WDAY",
+				"ChangePercent": -1.09,
+				"CompanyName": "Workday"
+			},
+			{
+				"Symbol": "HAL",
+				"ChangePercent": -0.89,
+				"CompanyName": "Halliburton Company"
+			},
+			{
+				"Symbol": "BAH",
+				"ChangePercent": -0.87,
+				"CompanyName": "Booz Allen Hamilton Holding Cor"
+			},
+			{
+				"Symbol": "JNJ",
+				"ChangePercent": -0.86,
+				"CompanyName": "Johnson & Johnson"
+			},
+			{
+				"Symbol": "DWA",
+				"ChangePercent": 0,
+				"CompanyName": "Dreamworks Animation Skg"
+			},
+			{
+				"Symbol": "FGNT",
+				"ChangePercent": 0,
+				"CompanyName": "Fire"
+			},
+			{
+				"Symbol": "BRK",
+				"ChangePercent": 0.03,
+				"CompanyName": "BurgerKing"
+			},
+			{
+				"Symbol": "TWX",
+				"ChangePercent": 0.09,
+				"CompanyName": "Time Warner Inc. New"
+			},
+			{
+				"Symbol": "MDT",
+				"ChangePercent": 0.15,
+				"CompanyName": "Medtronic plc. Ordinary Shares"
+			}
+		],
+		"MyFavorites": [
+			{
+				"UserId": 1,
+				"Symbol": "UA",
+				"TodayGainLoss": 1.29,
+				"TotalGainLoss": 15.45,
+				"Duration": 100
+			},
+			{
+				"UserId": 2,
+				"Symbol": "FB",
+				"TodayGainLoss": 4.5,
+				"TotalGainLoss": 5.45,
+				"Duration": 56
+			},
+			{
+				"UserId": 3,
+				"Symbol": "NVDA",
+				"TodayGainLoss": 1.21,
+				"TotalGainLoss": 25.54,
+				"Duration": 12
+			},
+			{
+				"UserId": 2,
+				"Symbol": "MDT",
+				"TodayGainLoss": 4.5,
+				"TotalGainLoss": 5.45,
+				"Duration": 56
+			},
+			{
+				"UserId": 3,
+				"Symbol": "TWX",
+				"TodayGainLoss": 1.21,
+				"TotalGainLoss": 25.54,
+				"Duration": 12
+			}
+		],
+		"FriendsOpinions": [
+			{
+				"UserId": 1,
+				"Symbol": "UA",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 2,
+				"Symbol": "FB",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 3,
+				"Symbol": "NVDA",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 4,
+				"Symbol": "MDT",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			},
+			{
+				"UserId": 5,
+				"Symbol": "TWX",
+				"Opinion": "Nothing good happening in their future. It's a toxic stock that lives with Zynga...",
+				"Username": "nelsonchen"
+			}
+		],
+		"Category": [
+			{
+				"Industry": "Tech",
+				"Symbol": "S",
+				"ChangePercent": 8.94,
+				"CompanyName": "Sprint Corporation"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "TWTR",
+				"ChangePercent": 6.86,
+				"CompanyName": "Twitter"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "VLO",
+				"ChangePercent": 4.36,
+				"CompanyName": "Valero Energy Corporation Commo"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "X",
+				"ChangePercent": 4.28,
+				"CompanyName": "United States Steel"
+			},
+			{
+				"Industry": "Tech",
+				"Symbol": "JCP",
+				"ChangePercent": 4.19,
+				"CompanyName": "J.C. Penney Company"
 			}
 		]
 	};

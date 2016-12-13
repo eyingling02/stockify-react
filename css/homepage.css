@@ -25,7 +25,7 @@ body {
 
 #picks {
   padding-top: 50px;
-  text-align: center;
+  text-align: center !important;
 }
 
 #shine {
@@ -35,22 +35,31 @@ body {
 
 /*SLICK*/
 .slider {
-        width: 100%;
-        margin: 0;
+      width: 100%;
+      margin: 0;
     }
 
 .slick-slide {
-  margin: 0px 0px;
+  display: inline-block;
 }
 
-.slick-slide img {
-  width: 0%;
+.slick-list {
+  height: 305px !important;
+  padding-top: 5px !important;
+  text-align: center !important;
 }
 
+.slick-track {
+  /*width: auto;*/
+  text-align: center !important;
+  /*transform: translate3d(-926px, 0px, 0px)!important;*/
+}
+
+/*
 .slick-prev:before,
 .slick-next:before {
     color: black;
-}
+}*/
 
 /* HEADERS */
 .category {
@@ -67,14 +76,14 @@ body {
   padding-left: 10px;
 }
 
-.streaks .outer .inner h3:last-child {
+.streaks > .outer > .inner > a > h3:last-child {
   font-size: 1.5em;
 }
-.streaks .outer .inner h3 {
+.streaks > .outer > .inner > a > h3 {
   font-size: 1.3em;
   margin: 0 0 8px 0;
 }
-.public .outer .inner p:last-child {
+.public .outer .inner a > p:last-child {
   font-size: 1.5em;
 }
 
@@ -82,14 +91,12 @@ body {
 /*background-color: #606060;*/
 background-color: #404040;
     /*background-color: #27ae60;*/
-    position: relative;
-    display: inline-block;
-    /*height: 18%;*/
-    /*width: 15%;*/
-    height: 290px;
-    width: 200px;
-    border: 3px solid #FFFFFF;
-    border-radius: 35px;
+    position: relative !important;
+    display: inline-block !important;
+    height: 290px !important;
+    width: 200px !important;
+    border: 3px solid #FFFFFF !important;
+    border-radius: 35px !important;
     margin: 1% 1% 1% 1%;
     text: white;
     overflow: hidden;
@@ -182,7 +189,6 @@ background-color: #404040;
   /*text-align: "justify";*/
   font-size: 1.2em;
   margin-bottom: 30px;
-  font-style: italic;
 }
 .inner a:hover {
      color: white;
