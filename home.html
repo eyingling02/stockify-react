@@ -21,14 +21,6 @@
     <script src="./js/main.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto|Open+Sans" rel="stylesheet">
-    <style>
-    		.slick-slide
-    		{
-    			width: 200px;
-    			margin: 0 10px;
-    		}
-    	</style>
-
 </head>
 
 <body>
@@ -49,33 +41,87 @@
         $(document).on('ready', function() {
             $('.slider').slick({
                 dots: true,
-                infinite: true,
+                infinite: false,
                 slidesToShow: 5,
                 slidesToScroll: 5,
 
-                responsive: [{
-
-                  breakpoint: 1024,
+                responsive: [
+                  {
+                    breakpoint: 1434,
                     settings: {
-                      slidesToShow: 3,
-                      infinite: true
+                      infinite: false,
+                      slidesToShow: 4,
+                      slidesToScroll: 4,
                     }
-                }, {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 2,
-                    infinite: true
+                  },
+                  {
+                    breakpoint: 1142,
+                    settings: {
+                      infinite: false,
+                      slidesToShow: 3,
+                      slidesToScroll: 3
+                    }
+                  },
+                  {
+                    breakpoint: 838,
+                    settings: {
+                      infinite: false,
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                  {
+                    breakpoint: 550,
+                    settings: {
+                      infinite: false,
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
                   }
-                }, {
-                  breakpoint: 300,
-                  settings: {
-                    slidesToShow: 1,
-                    infinite: true
-                  }
-                }]
+                ]
             })
         })
     </script>
+    <!-- <script>
+    Slick.prototype.setDimensions = function() {
+
+    var _ = this;
+
+    if (_.options.vertical === false) {
+        if (_.options.centerMode === true) {
+            _.$list.css({
+                padding: ('0px ' + _.options.centerPadding)
+            });
+        }
+    } else {
+        _.$list.height(_.$slides.first().outerHeight(true) * _.options.slidesToShow);
+        if (_.options.centerMode === true) {
+            _.$list.css({
+                padding: (_.options.centerPadding + ' 0px')
+            });
+        }
+    }
+
+    _.listWidth = _.$list.width();
+    _.listHeight = _.$list.height();
+
+
+    if (_.options.vertical === false && _.options.variableWidth === false) {
+        _.slideWidth = Math.ceil(_.listWidth / _.options.slidesToShow);
+        _.$slideTrack.width(Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length)));
+
+    } else if (_.options.variableWidth === true) {
+        _.$slideTrack.width(5000 * _.slideCount);
+    } else {
+        _.slideWidth = Math.ceil(_.listWidth);
+        _.$slideTrack.height(Math.ceil((_.$slides.first().outerHeight(true) * _.$slideTrack.children('.slick-slide').length)));
+    }
+
+    var offset = _.$slides.first().outerWidth(true) - _.$slides.first().width();
+    if (_.options.variableWidth === false) _.$slideTrack.children('.slick-slide').width(_.slideWidth - offset);
+
+};
+</script> -->
 </body>
 
 </html>

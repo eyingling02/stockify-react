@@ -21564,7 +21564,7 @@
 	                { id: 'picks' },
 	                React.createElement(
 	                    'div',
-	                    { className: 'streaks' },
+	                    { className: 'streaks row' },
 	                    React.createElement(
 	                        'div',
 	                        { className: 'category' },
@@ -21576,7 +21576,7 @@
 	                    ),
 	                    React.createElement(
 	                        'div',
-	                        { className: 'regular' },
+	                        { className: 'regular slider' },
 	                        data.Hotstreak.map(function (stock) {
 	                            return React.createElement(TileHotStreak, _extends({}, stock, { key: stock.UserId }));
 	                        })
@@ -21616,7 +21616,7 @@
 	                    ),
 	                    React.createElement(
 	                        'div',
-	                        { className: 'regular' },
+	                        { className: 'regular slider' },
 	                        data.MyFavorites.map(function (stock) {
 	                            return React.createElement(TileMyFavorites, _extends({}, stock, { key: stock.Symbol }));
 	                        })
@@ -21636,7 +21636,7 @@
 	                    ),
 	                    React.createElement(
 	                        'div',
-	                        { className: 'regular' },
+	                        { className: 'regular slider' },
 	                        data.FriendsOpinions.map(function (stock) {
 	                            return React.createElement(TileFriendsOpinions, _extends({}, stock, { key: stock.UserId }));
 	                        })
@@ -21656,7 +21656,7 @@
 	                    ),
 	                    React.createElement(
 	                        'div',
-	                        { className: 'regular' },
+	                        { className: 'regular slider' },
 	                        data.Category.map(function (stock) {
 	                            return React.createElement(TileCategory, _extends({}, stock, { key: stock.Symbol }));
 	                        })
