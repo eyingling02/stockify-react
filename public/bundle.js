@@ -49,6 +49,9 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
 	var Home = __webpack_require__(178);
+
+	var User = __webpack_require__(240);
+
 	// const Favorites = require('./favorites')
 	// const Opinions = require('./opinions')
 	// const Streaks = require('./streaks')
@@ -63,11 +66,14 @@
 	  return React.createElement(
 	    Router,
 	    { history: hashHistory },
-	    React.createElement(Route, { path: '/', component: Home })
+	    React.createElement(Route, { path: '/', component: Home }),
+	    React.createElement(Route, { path: '/user', component: User })
 	  );
 	};
 
 	ReactDOM.render(React.createElement(Stockify, null), document.getElementById('stocks'));
+
+	// ReactDOM.render(<Stockify />, document.getElementById('user'))
 
 /***/ },
 /* 1 */
@@ -27447,6 +27453,94 @@
 			}
 		]
 	};
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(1);
+
+	var _require = __webpack_require__(179),
+	    Link = _require.Link;
+
+	var Personal = __webpack_require__(241);
+	// const TopStats = require('./')
+	// const NextUpcoming = require('./')
+	// const QuarterBest = require('./')
+	// const FidelityPortfolio = require('./')
+
+	var data = __webpack_require__(239);
+
+	var User = function (_React$Component) {
+	    _inherits(User, _React$Component);
+
+	    function User() {
+	        _classCallCheck(this, User);
+
+	        return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).apply(this, arguments));
+	    }
+
+	    _createClass(User, [{
+	        key: 'render',
+	        value: function render() {
+	            return (
+	                // <div className="">Test</div>
+	                React.createElement(
+	                    'div',
+	                    null,
+	                    React.createElement(Personal, null)
+	                )
+	            );
+	        }
+	    }]);
+
+	    return User;
+	}(React.Component);
+
+	module.exports = User;
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+
+	var Personal = function Personal() {
+	    return React.createElement(
+	        "div",
+	        null,
+	        React.createElement("img", { src: "img/nelson-fb.png", height: "50", width: "50" }),
+	        React.createElement(
+	            "p",
+	            null,
+	            "Nelson Chen"
+	        ),
+	        React.createElement(
+	            "p",
+	            null,
+	            "University: Cal Poly SLO"
+	        ),
+	        React.createElement(
+	            "p",
+	            null,
+	            "Specialties: Technology"
+	        )
+	    );
+	};
+
+	module.exports = Personal;
 
 /***/ }
 /******/ ]);
