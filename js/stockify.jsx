@@ -15,3 +15,4 @@ const Stockify = () => (
 
 
 ReactDOM.render(<Stockify />, document.getElementById('stocks'))
+ReactDOM.render(<Stockify />, document.getElementById('user_profile'))
