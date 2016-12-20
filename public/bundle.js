@@ -27478,7 +27478,7 @@
 	var NextUpcoming = __webpack_require__(243);
 	var PersonalBest = __webpack_require__(244);
 	var GoToUser = __webpack_require__(245);
-	var UserPortfolio = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./my-portfolio\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	// const UserPortfolio = require('./my-portfolio')
 
 	var data = __webpack_require__(239);
 
@@ -27497,6 +27497,11 @@
 	      return React.createElement(
 	        'div',
 	        null,
+	        React.createElement(
+	          'h1',
+	          null,
+	          'Hello'
+	        ),
 	        React.createElement(
 	          'div',
 	          { className: 'personal' },
@@ -27521,11 +27526,6 @@
 	          'div',
 	          { className: 'personalbest' },
 	          React.createElement(PersonalBest, null)
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'userportfolio' },
-	          React.createElement(UserPortfolio, null)
 	        )
 	      );
 	    }
@@ -27710,22 +27710,22 @@
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(1);
 	var GoToUser = function GoToUser() {
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
 	    React.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'Go to '
+	      "Go to "
 	    ),
 	    React.createElement(
-	      'a',
-	      null,
-	      '^ Friends Dropdown ^'
+	      "a",
+	      { href: "#" },
+	      "^ Friends Dropdown ^"
 	    )
 	  );
 	};

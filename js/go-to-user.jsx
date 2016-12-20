@@ -2,7 +2,7 @@ const React = require('react')
 const GoToUser = () => (
   <div>
     <p>Go to </p>
-    <a>^ Friends Dropdown ^</a>
+    <a href="#">^ Friends Dropdown ^</a>
   </div>
 )
 
