@@ -269,6 +269,18 @@ background-color: #404040;
     display: inline;
     float: left;
 }
+
+/* INDIVIDUAL USER PAGE*/
+.personal {
+  float: left;
+}
+.topstats {
+  float: right;
+}
+
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

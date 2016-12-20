@@ -16,7 +16,6 @@ const Stockify = () => (
   </Router>
 )
 
-
 ReactDOM.render(<Stockify />, document.getElementById('stocks'))
 
 // ReactDOM.render(<Stockify />, document.getElementById('user'))

@@ -6,7 +6,7 @@ const TopStats = require('./top-stats')
 const NextUpcoming = require('./next-upcoming')
 const PersonalBest = require('./personal-best')
 const GoToUser = require('./go-to-user')
-// const FidelityPortfolio = require('./')
+const UserPortfolio = require('./my-portfolio')
 
 const data = require('../data')
 
@@ -14,11 +14,12 @@ class User extends React.Component {
     render() {
         return (
           <div>
-            <div><Personal /></div>
-            <div><TopStats /></div>
-            <div><GoToUser /></div>
-            <div><NextUpcoming /></div>
-            <div><PersonalBest /></div>
+            <div className='personal'><Personal /></div>
+            <div className='topstats'><TopStats /></div>
+            <div className='gotouser'><GoToUser /></div>
+            <div className='nextupcoming'><NextUpcoming /></div>
+            <div className='personalbest'><PersonalBest /></div>
+            <div className='userportfolio'><UserPortfolio /></div>
           </div>
         )
     }

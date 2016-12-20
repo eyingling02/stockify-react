@@ -27478,7 +27478,7 @@
 	var NextUpcoming = __webpack_require__(243);
 	var PersonalBest = __webpack_require__(244);
 	var GoToUser = __webpack_require__(245);
-	// const FidelityPortfolio = require('./')
+	var UserPortfolio = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./my-portfolio\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var data = __webpack_require__(239);
 
@@ -27499,28 +27499,33 @@
 	        null,
 	        React.createElement(
 	          'div',
-	          null,
+	          { className: 'personal' },
 	          React.createElement(Personal, null)
 	        ),
 	        React.createElement(
 	          'div',
-	          null,
+	          { className: 'topstats' },
 	          React.createElement(TopStats, null)
 	        ),
 	        React.createElement(
 	          'div',
-	          null,
+	          { className: 'gotouser' },
 	          React.createElement(GoToUser, null)
 	        ),
 	        React.createElement(
 	          'div',
-	          null,
+	          { className: 'nextupcoming' },
 	          React.createElement(NextUpcoming, null)
 	        ),
 	        React.createElement(
 	          'div',
-	          null,
+	          { className: 'personalbest' },
 	          React.createElement(PersonalBest, null)
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'userportfolio' },
+	          React.createElement(UserPortfolio, null)
 	        )
 	      );
 	    }
