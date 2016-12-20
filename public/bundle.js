@@ -27474,37 +27474,59 @@
 	    Link = _require.Link;
 
 	var Personal = __webpack_require__(241);
-	// const TopStats = require('./')
-	// const NextUpcoming = require('./')
-	// const QuarterBest = require('./')
+	var TopStats = __webpack_require__(242);
+	var NextUpcoming = __webpack_require__(243);
+	var PersonalBest = __webpack_require__(244);
+	var GoToUser = __webpack_require__(245);
 	// const FidelityPortfolio = require('./')
 
 	var data = __webpack_require__(239);
 
 	var User = function (_React$Component) {
-	    _inherits(User, _React$Component);
+	  _inherits(User, _React$Component);
 
-	    function User() {
-	        _classCallCheck(this, User);
+	  function User() {
+	    _classCallCheck(this, User);
 
-	        return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).apply(this, arguments));
+	  }
+
+	  _createClass(User, [{
+	    key: 'render',
+	    value: function render() {
+	      return React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement(Personal, null)
+	        ),
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement(TopStats, null)
+	        ),
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement(GoToUser, null)
+	        ),
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement(NextUpcoming, null)
+	        ),
+	        React.createElement(
+	          'div',
+	          null,
+	          React.createElement(PersonalBest, null)
+	        )
+	      );
 	    }
+	  }]);
 
-	    _createClass(User, [{
-	        key: 'render',
-	        value: function render() {
-	            return (
-	                // <div className="">Test</div>
-	                React.createElement(
-	                    'div',
-	                    null,
-	                    React.createElement(Personal, null)
-	                )
-	            );
-	        }
-	    }]);
-
-	    return User;
+	  return User;
 	}(React.Component);
 
 	module.exports = User;
@@ -27516,7 +27538,6 @@
 	"use strict";
 
 	var React = __webpack_require__(1);
-
 	var Personal = function Personal() {
 	    return React.createElement(
 	        "div",
@@ -27541,6 +27562,170 @@
 	};
 
 	module.exports = Personal;
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var TopStats = function TopStats() {
+	    return React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	            'p',
+	            null,
+	            'Q4 2016'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'Daily Picks: 269'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'Avg Streak: 2.8'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'Gain/Loss: +$5249'
+	        )
+	    );
+	};
+
+	module.exports = TopStats;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var NextUpcoming = function NextUpcoming() {
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "p",
+	      null,
+	      "Upcoming"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "TSLA"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "10 days left"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Buy: Correct"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Accuracy: 5%"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "\"This is a huge win for Elon, Solar City...\""
+	    ),
+	    React.createElement(
+	      "a",
+	      { href: "#" },
+	      "more"
+	    )
+	  );
+	};
+
+	module.exports = NextUpcoming;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var PersonalBest = function PersonalBest() {
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "p",
+	      null,
+	      "Upcoming"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "NVDA"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Duration: 60 Days"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Accuracy: 5%"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Gain/Loss: +$85,000"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "\"Love this stock, poised to make huge gains timing is right for them...\""
+	    ),
+	    React.createElement(
+	      "a",
+	      { href: "#" },
+	      "more"
+	    )
+	  );
+	};
+
+	module.exports = PersonalBest;
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var GoToUser = function GoToUser() {
+	  return React.createElement(
+	    'div',
+	    null,
+	    React.createElement(
+	      'p',
+	      null,
+	      'Go to '
+	    ),
+	    React.createElement(
+	      'a',
+	      null,
+	      '^ Friends Dropdown ^'
+	    )
+	  );
+	};
+
+	module.exports = GoToUser;
 
 /***/ }
 /******/ ]);
