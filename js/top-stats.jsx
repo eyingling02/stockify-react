@@ -2,10 +2,18 @@ const React = require('react')
 const TopStats = () => (
     <div>
         <p className="quarter">Q4 2016</p>
-        <p className="quarter-stats">Daily Picks</p>
-        <p className="quarter-stats">269</p>
-        <p className="quarter-stats">Avg Streak: 2.8</p>
-        <p className="quarter-stats">Gain/Loss: +$5249</p>
+        <div className="stat-blocks">
+          <p>Daily Picks</p>
+          <p>269</p>
+        </div>
+        <div className="stat-blocks">
+          <p>Avg Streak</p>
+          <p>2.8</p>
+        </div>
+        <div className="stat-blocks">
+          <p>Gain/Loss</p>
+          <p>+$5249</p>
+        </div>
     </div>
 )
 

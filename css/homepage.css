@@ -271,6 +271,10 @@ background-color: #404040;
 }
 
 /* INDIVIDUAL USER PROFILE*/
+.individual-user {
+  margin-left: 7%;
+  margin-right: 7%;
+}
 .top-section {
   margin-top: 5%;
   height: 200px;
@@ -278,7 +282,6 @@ background-color: #404040;
 .personal {
   float: left;
   width: 50%;
-  padding-left: 3%;
 }
 .personal img {
   float: left;
@@ -302,17 +305,16 @@ background-color: #404040;
 }
 .topstats .quarter {
   font-size: 200%;
+  padding-bottom: 3%;
 }
-.topstats .quarter-stats {
-  font-size: 125%;
-  display: inline;
+.topstats .stat-blocks {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  font-size: 150%;
   padding-left: 2%;
   padding-right: 2%;
 }
-.topstats div .quarter-stats {
-  /*display: inline;*/
-}
-
 
 
 /*

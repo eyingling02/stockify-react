@@ -27496,7 +27496,7 @@
 	        value: function render() {
 	            return React.createElement(
 	                'div',
-	                null,
+	                { className: 'individual-user' },
 	                React.createElement(
 	                    'div',
 	                    { className: 'top-section' },
@@ -27577,39 +27577,57 @@
 
 	var React = __webpack_require__(1);
 	var TopStats = function TopStats() {
-	    return React.createElement(
-	        "div",
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "p",
+	      { className: "quarter" },
+	      "Q4 2016"
+	    ),
+	    React.createElement(
+	      "div",
+	      { className: "stat-blocks" },
+	      React.createElement(
+	        "p",
 	        null,
-	        React.createElement(
-	            "p",
-	            { className: "quarter" },
-	            "Q4 2016"
-	        ),
-	        React.createElement(
-	            "div",
-	            null,
-	            React.createElement(
-	                "p",
-	                { className: "quarter-stats" },
-	                "Daily Picks"
-	            ),
-	            React.createElement(
-	                "p",
-	                { className: "quarter-stats" },
-	                "269"
-	            )
-	        ),
-	        React.createElement(
-	            "p",
-	            { className: "quarter-stats" },
-	            "Avg Streak: 2.8"
-	        ),
-	        React.createElement(
-	            "p",
-	            { className: "quarter-stats" },
-	            "Gain/Loss: +$5249"
-	        )
-	    );
+	        "Daily Picks"
+	      ),
+	      React.createElement(
+	        "p",
+	        null,
+	        "269"
+	      )
+	    ),
+	    React.createElement(
+	      "div",
+	      { className: "stat-blocks" },
+	      React.createElement(
+	        "p",
+	        null,
+	        "Avg Streak"
+	      ),
+	      React.createElement(
+	        "p",
+	        null,
+	        "2.8"
+	      )
+	    ),
+	    React.createElement(
+	      "div",
+	      { className: "stat-blocks" },
+	      React.createElement(
+	        "p",
+	        null,
+	        "Gain/Loss"
+	      ),
+	      React.createElement(
+	        "p",
+	        null,
+	        "+$5249"
+	      )
+	    )
+	  );
 	};
 
 	module.exports = TopStats;
@@ -27736,6 +27754,34 @@
 	      "a",
 	      { href: "#" },
 	      "^ Friends Dropdown ^"
+	    ),
+	    React.createElement(
+	      "div",
+	      { "class": "dropdown" },
+	      React.createElement(
+	        "button",
+	        { onclick: "myFunction()", "class": "dropbtn" },
+	        "Dropdown"
+	      ),
+	      React.createElement(
+	        "div",
+	        { id: "myDropdown", "class": "dropdown-content" },
+	        React.createElement(
+	          "a",
+	          { href: "#" },
+	          "Victor"
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#" },
+	          "Erica"
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#" },
+	          "Grace"
+	        )
+	      )
 	    )
 	  );
 	};

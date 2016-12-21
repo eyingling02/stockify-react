@@ -13,7 +13,7 @@ const data = require('../data')
 class User extends React.Component {
     render() {
         return (
-          <div>
+          <div className="individual-user">
             <div className='top-section'>
                 <div className='personal'><Personal /></div>
                 <div className='topstats'><TopStats /></div>
