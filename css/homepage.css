@@ -270,14 +270,48 @@ background-color: #404040;
     float: left;
 }
 
-/* INDIVIDUAL USER PAGE*/
+/* INDIVIDUAL USER PROFILE*/
+.top-section {
+  margin-top: 5%;
+  height: 200px;
+}
 .personal {
   float: left;
+  width: 50%;
+  padding-left: 3%;
 }
-.topstats {
-  float: right;
+.personal img {
+  float: left;
+  max-width: 50%;
+}
+.personal p {
+  padding-left: 3%;
+  text-align: left;
+}
+.personal .name {
+  font-size: 200%;
+}
+.personal .user-detail {
+  font-size: 150%;
 }
 
+.topstats {
+  float: right;
+  padding-left: 5%;
+  width: 50%;
+}
+.topstats .quarter {
+  font-size: 200%;
+}
+.topstats .quarter-stats {
+  font-size: 125%;
+  display: inline;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.topstats div .quarter-stats {
+  /*display: inline;*/
+}
 
 
 

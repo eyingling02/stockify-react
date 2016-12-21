@@ -14,9 +14,10 @@ class User extends React.Component {
     render() {
         return (
           <div>
-            <h1>Hello</h1>
-            <div className='personal'><Personal /></div>
-            <div className='topstats'><TopStats /></div>
+            <div className='top-section'>
+                <div className='personal'><Personal /></div>
+                <div className='topstats'><TopStats /></div>
+            </div>
             <div className='gotouser'><GoToUser /></div>
             <div className='nextupcoming'><NextUpcoming /></div>
             <div className='personalbest'><PersonalBest /></div>

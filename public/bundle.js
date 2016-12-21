@@ -27483,55 +27483,54 @@
 	var data = __webpack_require__(239);
 
 	var User = function (_React$Component) {
-	  _inherits(User, _React$Component);
+	    _inherits(User, _React$Component);
 
-	  function User() {
-	    _classCallCheck(this, User);
+	    function User() {
+	        _classCallCheck(this, User);
 
-	    return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).apply(this, arguments));
-	  }
-
-	  _createClass(User, [{
-	    key: 'render',
-	    value: function render() {
-	      return React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	          'h1',
-	          null,
-	          'Hello'
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'personal' },
-	          React.createElement(Personal, null)
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'topstats' },
-	          React.createElement(TopStats, null)
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'gotouser' },
-	          React.createElement(GoToUser, null)
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'nextupcoming' },
-	          React.createElement(NextUpcoming, null)
-	        ),
-	        React.createElement(
-	          'div',
-	          { className: 'personalbest' },
-	          React.createElement(PersonalBest, null)
-	        )
-	      );
+	        return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).apply(this, arguments));
 	    }
-	  }]);
 
-	  return User;
+	    _createClass(User, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                'div',
+	                null,
+	                React.createElement(
+	                    'div',
+	                    { className: 'top-section' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'personal' },
+	                        React.createElement(Personal, null)
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'topstats' },
+	                        React.createElement(TopStats, null)
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'gotouser' },
+	                    React.createElement(GoToUser, null)
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'nextupcoming' },
+	                    React.createElement(NextUpcoming, null)
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'personalbest' },
+	                    React.createElement(PersonalBest, null)
+	                )
+	            );
+	        }
+	    }]);
+
+	    return User;
 	}(React.Component);
 
 	module.exports = User;
@@ -27547,20 +27546,22 @@
 	    return React.createElement(
 	        "div",
 	        null,
-	        React.createElement("img", { src: "img/nelson-fb.png", height: "50", width: "50" }),
+	        React.createElement("img", { src: "img/nelson-fb.png", height: "150", width: "150" }),
 	        React.createElement(
 	            "p",
-	            null,
+	            { className: "name" },
 	            "Nelson Chen"
 	        ),
+	        React.createElement("br", null),
 	        React.createElement(
 	            "p",
-	            null,
+	            { className: "user-detail" },
 	            "University: Cal Poly SLO"
 	        ),
+	        React.createElement("br", null),
 	        React.createElement(
 	            "p",
-	            null,
+	            { className: "user-detail" },
 	            "Specialties: Technology"
 	        )
 	    );
@@ -27572,32 +27573,41 @@
 /* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(1);
 	var TopStats = function TopStats() {
 	    return React.createElement(
-	        'div',
+	        "div",
 	        null,
 	        React.createElement(
-	            'p',
-	            null,
-	            'Q4 2016'
+	            "p",
+	            { className: "quarter" },
+	            "Q4 2016"
 	        ),
 	        React.createElement(
-	            'p',
+	            "div",
 	            null,
-	            'Daily Picks: 269'
+	            React.createElement(
+	                "p",
+	                { className: "quarter-stats" },
+	                "Daily Picks"
+	            ),
+	            React.createElement(
+	                "p",
+	                { className: "quarter-stats" },
+	                "269"
+	            )
 	        ),
 	        React.createElement(
-	            'p',
-	            null,
-	            'Avg Streak: 2.8'
+	            "p",
+	            { className: "quarter-stats" },
+	            "Avg Streak: 2.8"
 	        ),
 	        React.createElement(
-	            'p',
-	            null,
-	            'Gain/Loss: +$5249'
+	            "p",
+	            { className: "quarter-stats" },
+	            "Gain/Loss: +$5249"
 	        )
 	    );
 	};
