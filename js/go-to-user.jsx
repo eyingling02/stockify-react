@@ -1,12 +1,10 @@
 const React = require('react')
 const GoToUser = () => (
   <div>
-    <p >Go to </p>
-    <a href="#">^ Friends Dropdown ^</a>
-
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-      <div id="myDropdown" class="dropdown-content">
+    <p className="goto">Go to </p>
+    <div className="dropdown">
+      <button onclick="myFunction()" className="dropbtn">Dropdown</button>
+      <div className="myDropdown" className="dropdown-content">
         <a href="#">Victor</a>
         <a href="#">Erica</a>
         <a href="#">Grace</a>

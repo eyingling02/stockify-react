@@ -27509,12 +27509,12 @@
 	                        'div',
 	                        { className: 'topstats' },
 	                        React.createElement(TopStats, null)
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'gotouser' },
+	                        React.createElement(GoToUser, null)
 	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'gotouser' },
-	                    React.createElement(GoToUser, null)
 	                ),
 	                React.createElement(
 	                    'div',
@@ -27740,6 +27740,8 @@
 
 	"use strict";
 
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 	var React = __webpack_require__(1);
 	var GoToUser = function GoToUser() {
 	  return React.createElement(
@@ -27747,25 +27749,20 @@
 	    null,
 	    React.createElement(
 	      "p",
-	      null,
+	      { className: "goto" },
 	      "Go to "
 	    ),
 	    React.createElement(
-	      "a",
-	      { href: "#" },
-	      "^ Friends Dropdown ^"
-	    ),
-	    React.createElement(
 	      "div",
-	      { "class": "dropdown" },
+	      { className: "dropdown" },
 	      React.createElement(
 	        "button",
-	        { onclick: "myFunction()", "class": "dropbtn" },
+	        { onclick: "myFunction()", className: "dropbtn" },
 	        "Dropdown"
 	      ),
 	      React.createElement(
 	        "div",
-	        { id: "myDropdown", "class": "dropdown-content" },
+	        _defineProperty({ className: "myDropdown" }, "className", "dropdown-content"),
 	        React.createElement(
 	          "a",
 	          { href: "#" },

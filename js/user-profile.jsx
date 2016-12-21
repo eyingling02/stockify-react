@@ -1,7 +1,7 @@
 const React = require('react')
 const {Link} = require('react-router')
 
-const Personal = require('./personal-profile')
+const Personal = require('./personal-details')
 const TopStats = require('./top-stats')
 const NextUpcoming = require('./next-upcoming')
 const PersonalBest = require('./personal-best')
@@ -17,8 +17,8 @@ class User extends React.Component {
             <div className='top-section'>
                 <div className='personal'><Personal /></div>
                 <div className='topstats'><TopStats /></div>
+                <div className='gotouser'><GoToUser /></div>
             </div>
-            <div className='gotouser'><GoToUser /></div>
             <div className='nextupcoming'><NextUpcoming /></div>
             <div className='personalbest'><PersonalBest /></div>
           </div>
