@@ -27478,6 +27478,7 @@
 	var NextUpcoming = __webpack_require__(243);
 	var PersonalBest = __webpack_require__(244);
 	var GoToUser = __webpack_require__(245);
+	var UserPortfolio = __webpack_require__(246);
 	// const UserPortfolio = require('./my-portfolio')
 
 	var data = __webpack_require__(239);
@@ -27529,6 +27530,15 @@
 	                        { className: 'personalbest' },
 	                        React.createElement(PersonalBest, null)
 	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'user-bottom-section' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'userportfolio' },
+	                        React.createElement(UserPortfolio, null)
+	                    )
 	                )
 	            );
 	        }
@@ -27552,21 +27562,23 @@
 	        null,
 	        React.createElement("img", { src: "img/nelson-fb.png", height: "150", width: "150" }),
 	        React.createElement(
-	            "p",
-	            { className: "name" },
-	            "Nelson Chen"
-	        ),
-	        React.createElement("br", null),
-	        React.createElement(
-	            "p",
-	            { className: "user-detail" },
-	            "University: Cal Poly SLO"
-	        ),
-	        React.createElement("br", null),
-	        React.createElement(
-	            "p",
-	            { className: "user-detail" },
-	            "Specialties: Technology"
+	            "div",
+	            { className: "user-info" },
+	            React.createElement(
+	                "p",
+	                { className: "name" },
+	                "Nelson Chen"
+	            ),
+	            React.createElement(
+	                "p",
+	                { className: "user-detail" },
+	                "University: Cal Poly SLO"
+	            ),
+	            React.createElement(
+	                "p",
+	                { className: "user-detail" },
+	                "Specialties: Technology"
+	            )
 	        )
 	    );
 	};
@@ -27649,38 +27661,46 @@
 	    null,
 	    React.createElement(
 	      "p",
-	      null,
-	      "Upcoming"
+	      { className: "upcoming-title" },
+	      "Next Upcoming"
 	    ),
 	    React.createElement(
-	      "p",
-	      null,
-	      "TSLA"
+	      "div",
+	      { className: "upcoming-left" },
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-stock" },
+	        "TSLA"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-prediction" },
+	        "10 days left"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-prediction" },
+	        "Buy: Correct"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-prediction" },
+	        "Price: $210 (+5%)"
+	      )
 	    ),
 	    React.createElement(
-	      "p",
-	      null,
-	      "10 days left"
-	    ),
-	    React.createElement(
-	      "p",
-	      null,
-	      "Buy: Correct"
-	    ),
-	    React.createElement(
-	      "p",
-	      null,
-	      "Accuracy: 5%"
-	    ),
-	    React.createElement(
-	      "p",
-	      null,
-	      "\"This is a huge win for Elon, Solar City...\""
-	    ),
-	    React.createElement(
-	      "a",
-	      { href: "#" },
-	      "more"
+	      "div",
+	      { className: "upcoming-right" },
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-opinion" },
+	        "\"This is a huge win for Elon. He doesn't care about money he cares about long term progress. TSLA books are scary red, like super risk trajectory. Likely all a massive calculated risk for Elon, which makes complete sense. TSLA stock is still a long term buy for me but short term sell. Solar is a long term sell (+2 years) it's just not ready for prime time and there's still going to be Trump backed oil headwinds. When all the pieces fall into place: Powerwall, Solar shingles, Cars. Will the economy able to afford their products?\""
+	      ),
+	      React.createElement(
+	        "a",
+	        { href: "#" },
+	        "more"
+	      )
 	    )
 	  );
 	};
@@ -27700,38 +27720,46 @@
 	    null,
 	    React.createElement(
 	      "p",
-	      null,
-	      "Upcoming"
+	      { className: "upcoming-title" },
+	      "Personal Best"
 	    ),
 	    React.createElement(
-	      "p",
-	      null,
-	      "NVDA"
+	      "div",
+	      { className: "upcoming-left" },
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-stock" },
+	        "NVDA"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-prediction" },
+	        "Duration: 60 Days"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-prediction" },
+	        "Accuracy: 5%"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-prediction" },
+	        "Gain/Loss: +$85,000"
+	      )
 	    ),
 	    React.createElement(
-	      "p",
-	      null,
-	      "Duration: 60 Days"
-	    ),
-	    React.createElement(
-	      "p",
-	      null,
-	      "Accuracy: 5%"
-	    ),
-	    React.createElement(
-	      "p",
-	      null,
-	      "Gain/Loss: +$85,000"
-	    ),
-	    React.createElement(
-	      "p",
-	      null,
-	      "\"Love this stock, poised to make huge gains timing is right for them...\""
-	    ),
-	    React.createElement(
-	      "a",
-	      { href: "#" },
-	      "more"
+	      "div",
+	      { className: "upcoming-right" },
+	      React.createElement(
+	        "p",
+	        { className: "upcoming-opinion" },
+	        "\"Love this stock, poised to make huge gains timing is right for them. I want to verbally double down on NVDA. It's really pushing limits like Facebook in 2015. It's got a death grip on all the major pieces of future tech ( as per previous posts). It's still a major buy for me and about to move into a different phase both in market expectations and product shifts (as mass market adopts things like VR and automated cars, and AI, and robotics). Still a major long term buy.\""
+	      ),
+	      React.createElement(
+	        "a",
+	        { href: "#" },
+	        "more"
+	      )
 	    )
 	  );
 	};
@@ -27786,6 +27814,88 @@
 	};
 
 	module.exports = GoToUser;
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var UserPortfolio = function UserPortfolio() {
+	    return React.createElement(
+	        "ol",
+	        { className: "sortable" },
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "NVDA"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "MSFT"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "AMZN"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "YELP"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "ROST"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "GOOG"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "FB"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "TSLA"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "NFLX"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "AAPL"
+	        ),
+	        React.createElement(
+	            "li",
+	            { className: "ui-state-default" },
+	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
+	            "ACTI"
+	        )
+	    );
+	};
+
+	module.exports = UserPortfolio;
 
 /***/ }
 /******/ ]);

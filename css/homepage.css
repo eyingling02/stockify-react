@@ -274,17 +274,12 @@ background-color: #404040;
   margin-left: 7%;
   margin-right: 7%;
 }
+
 .user-top-section {
   margin-top: 5%;
-  height: 225px;
+  height: 175px;
+  width: 100%;
 }
-.user-mid-section {
-
-}
-.user-bottom-section {
-
-}
-
 .personal {
   float: left;
   width: 50%;
@@ -293,8 +288,11 @@ background-color: #404040;
   float: left;
   max-width: 50%;
 }
+.personal .user-info{
+  padding-left: 5%;
+}
 .personal p {
-  padding-left: 3%;
+  display: block;
   text-align: left;
 }
 .personal .name {
@@ -311,7 +309,7 @@ background-color: #404040;
 }
 .topstats .quarter {
   font-size: 200%;
-  padding-bottom: 3%;
+  /*padding-bottom: -5%;*/
 }
 .topstats .stat-blocks {
   display: inline-block;
@@ -326,8 +324,8 @@ background-color: #404040;
 .gotouser {
   float: right;
   height: 10%;
-  padding-top: 2%;
-  padding-right: 8%;
+  padding-top: 1%;
+  padding-right: 7%;
 }
 .goto {
   display: inline;
@@ -367,9 +365,78 @@ background-color: #404040;
 }
 /* Change color of dropdown links on hover */
 .gotouser .dropdown-content a:hover {background-color: #f1f1f1}
-
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .gotouser .show {display:block;}
+
+.user-mid-section {
+  margin-top: 3%;
+  height: 300px;
+  width: 100%;
+}
+.nextupcoming {
+  float: left;
+  border: 1px solid black;
+  width: 48%;
+  padding: 1%;
+  max-height: 300px;
+}
+.upcoming-title {
+  font-size: 150%;
+  display: block;
+}
+.upcoming-left {
+  padding-left: 3%;
+  float: left;
+  width: 50%;
+}
+.upcoming-right {
+  display: inline;
+}
+.upcoming-stock {
+  font-size: 125%;
+}
+.upcoming-prediction {
+  font-size: 110%;
+  padding-left: 3%;
+}
+
+.personalbest {
+  float: right;
+  border: 1px solid black;
+  width: 48%;
+  padding: 1%;
+  max-height: 300px;
+}
+
+.user-bottom-section {
+  margin-top: 3%;
+  margin-left: 3%;
+  height: 500px;
+  width: 100%;
+}
+.sortable {
+  /*list-style-type: none;*/
+  margin: 0;
+  padding: 0;
+  width: 60%;
+}
+.sortable li {
+  margin: 0 3px 3px 3px;
+  padding: 0.4em;
+  padding-left: 1.5em;
+  font-size: 1.4em;
+  height: 18px;
+}
+.sortable li span {
+  position: absolute;
+  margin-left: -1.3em;
+}
+
+
+
+
+
+
 
 /*
  * Remove text-shadow in selection highlight:

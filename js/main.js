@@ -43,5 +43,8 @@ $(document).ready( function(){
     // $(inner).children().css("color", "#c5b358")
   })
 
+  // $( ".sortable" ).sortable();
+  // $( ".sortable" ).disableSelection();
+
   // var shine = new Shine(document.getElementById('shine'));
 })

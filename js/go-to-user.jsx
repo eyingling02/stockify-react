@@ -3,7 +3,7 @@ const GoToUser = () => (
   <div>
     <p className="goto">Go to  </p>
     <div className="dropdown">
-      <button onclick="myFunction()" className="dropbtn">Dropdown</button>
+      <button onClick="myFunction()" className="dropbtn">Dropdown</button>
       <div id="myDropdown" className="dropdown-content">
         <a href="#">Victor</a>
         <a href="#">Erica</a>

@@ -6,6 +6,7 @@ const TopStats = require('./top-stats')
 const NextUpcoming = require('./next-upcoming')
 const PersonalBest = require('./personal-best')
 const GoToUser = require('./go-to-user')
+const UserPortfolio = require('./user-portfolio')
 // const UserPortfolio = require('./my-portfolio')
 
 const data = require('../data')
@@ -22,6 +23,9 @@ class User extends React.Component {
             <div className='user-mid-section'>
                 <div className='nextupcoming'><NextUpcoming /></div>
                 <div className='personalbest'><PersonalBest /></div>
+            </div>
+            <div className='user-bottom-section'>
+                <div className='userportfolio'><UserPortfolio /></div>
             </div>
           </div>
         )
