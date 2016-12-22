@@ -14,13 +14,15 @@ class User extends React.Component {
     render() {
         return (
           <div className="individual-user">
-            <div className='top-section'>
+            <div className='user-top-section'>
                 <div className='personal'><Personal /></div>
                 <div className='topstats'><TopStats /></div>
                 <div className='gotouser'><GoToUser /></div>
             </div>
-            <div className='nextupcoming'><NextUpcoming /></div>
-            <div className='personalbest'><PersonalBest /></div>
+            <div className='user-mid-section'>
+                <div className='nextupcoming'><NextUpcoming /></div>
+                <div className='personalbest'><PersonalBest /></div>
+            </div>
           </div>
         )
     }

@@ -12,7 +12,7 @@ const TopStats = () => (
         </div>
         <div className="stat-blocks">
           <p>Gain/Loss</p>
-          <p>+$5249</p>
+          <p>+$15,249</p>
         </div>
     </div>
 )

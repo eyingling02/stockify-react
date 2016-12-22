@@ -274,9 +274,15 @@ background-color: #404040;
   margin-left: 7%;
   margin-right: 7%;
 }
-.top-section {
+.user-top-section {
   margin-top: 5%;
-  height: 200px;
+  height: 225px;
+}
+.user-mid-section {
+
+}
+.user-bottom-section {
+
 }
 
 .personal {
@@ -327,25 +333,25 @@ background-color: #404040;
   display: inline;
 }
 /* Dropdown Button */
-.dropbtn {
+.gotouser .dropbtn {
     background-color: #2c3e50;
     color: white;
-    padding: 15px;
+    padding: 5px;
     font-size: 15px;
     border: none;
     cursor: pointer;
 }
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.gotouser .dropbtn:hover, .dropbtn:focus {
     background-color: #34495e;
 }
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.gotouser .dropdown {
     position: relative;
     display: inline-block;
 }
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.gotouser .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -353,17 +359,17 @@ background-color: #404040;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 /* Links inside the dropdown */
-.dropdown-content a {
+.gotouser .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.gotouser .dropdown-content a:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.gotouser .show {display:block;}
 
 /*
  * Remove text-shadow in selection highlight:

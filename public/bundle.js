@@ -27499,7 +27499,7 @@
 	                { className: 'individual-user' },
 	                React.createElement(
 	                    'div',
-	                    { className: 'top-section' },
+	                    { className: 'user-top-section' },
 	                    React.createElement(
 	                        'div',
 	                        { className: 'personal' },
@@ -27518,13 +27518,17 @@
 	                ),
 	                React.createElement(
 	                    'div',
-	                    { className: 'nextupcoming' },
-	                    React.createElement(NextUpcoming, null)
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'personalbest' },
-	                    React.createElement(PersonalBest, null)
+	                    { className: 'user-mid-section' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'nextupcoming' },
+	                        React.createElement(NextUpcoming, null)
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'personalbest' },
+	                        React.createElement(PersonalBest, null)
+	                    )
 	                )
 	            );
 	        }
@@ -27624,7 +27628,7 @@
 	      React.createElement(
 	        "p",
 	        null,
-	        "+$5249"
+	        "+$15,249"
 	      )
 	    )
 	  );
@@ -27740,8 +27744,6 @@
 
 	"use strict";
 
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 	var React = __webpack_require__(1);
 	var GoToUser = function GoToUser() {
 	  return React.createElement(
@@ -27750,7 +27752,7 @@
 	    React.createElement(
 	      "p",
 	      { className: "goto" },
-	      "Go to "
+	      "Go to  "
 	    ),
 	    React.createElement(
 	      "div",
@@ -27762,7 +27764,7 @@
 	      ),
 	      React.createElement(
 	        "div",
-	        _defineProperty({ className: "myDropdown" }, "className", "dropdown-content"),
+	        { id: "myDropdown", className: "dropdown-content" },
 	        React.createElement(
 	          "a",
 	          { href: "#" },
