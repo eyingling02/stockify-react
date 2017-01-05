@@ -17,12 +17,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/homepage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>var $ = jQuery.noConflict(true);</script>
+
 
     <!-- jquery sortable  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>var $sort = jQuery.noConflict(true);</script>
     <script>
-    $( function() {
-      $( ".sortable" ).sortable();
-      $( ".sortable" ).disableSelection();
+    $sort( function() {
+      $sort( ".sortable" ).sortable();
+      $sort( ".sortable" ).disableSelection();
     } );
     </script>
 
@@ -45,11 +50,16 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>var $slick = jQuery.noConflict(true);</script>
+
     <script>
-        $(document).on('ready', function() {
-            $('.slider').slick({
+        $slick(document).on('ready', function() {
+          console.log($().jquery)
+          console.log($slick().jquery)
+          console.log($sort().jquery)
+
+
+            $slick('.slider').slick({
                 dots: true,
                 infinite: false,
                 slidesToShow: 5,

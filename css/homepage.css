@@ -271,11 +271,14 @@ background-color: #404040;
 
 /* INDIVIDUAL USER PROFILE*/
 .individual-user {
-  margin-left: 7%;
-  margin-right: 7%;
+  color: #404040;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .user-top-section {
+  /*border-top: 1px solid #bdc3c7;*/
+  /*border-bottom: 3px solid #bdc3c7;*/
   margin-top: 5%;
   height: 175px;
   width: 100%;
@@ -283,20 +286,25 @@ background-color: #404040;
 .personal {
   float: left;
   width: 50%;
+  padding-bottom: 2%;
+  border-bottom: 3px solid #bdc3c7;
 }
 .personal img {
   float: left;
-  max-width: 50%;
+  min-width: 30%;
+  padding-left: 3%;
+  padding-top: 1%;
 }
 .personal .user-info{
-  padding-left: 5%;
+  padding-left: 35%;
+  padding-top: 1%;
 }
 .personal p {
   display: block;
   text-align: left;
 }
 .personal .name {
-  font-size: 200%;
+  font-size: 250%;
 }
 .personal .user-detail {
   font-size: 150%;
@@ -304,12 +312,13 @@ background-color: #404040;
 
 .topstats {
   float: right;
-  padding-left: 5%;
+  text-align: center;
+  padding-left: 0%;
   width: 50%;
 }
 .topstats .quarter {
-  font-size: 200%;
-  /*padding-bottom: -5%;*/
+  font-size: 225%;
+  padding-top: 1.5%;
 }
 .topstats .stat-blocks {
   display: inline-block;
@@ -320,11 +329,17 @@ background-color: #404040;
   padding-left: 2%;
   padding-right: 2%;
 }
-
+.topstat-title {
+  font-size: 90%;
+}
+.topstat-stock {
+  font-size: 120%;
+  margin-top: -10%;
+}
 .gotouser {
   float: right;
   height: 10%;
-  padding-top: 1%;
+  padding-top: 0%;
   padding-right: 7%;
 }
 .goto {
@@ -374,14 +389,16 @@ background-color: #404040;
   width: 100%;
 }
 .nextupcoming {
+  color: black;
   float: left;
-  border: 1px solid black;
+  /*border: 1px solid #ecf0f1;*/
+  border: 1px solid #bdc3c7;
   width: 48%;
   padding: 1%;
   max-height: 300px;
 }
 .upcoming-title {
-  font-size: 150%;
+  font-size: 200%;
   display: block;
 }
 .upcoming-left {
@@ -401,8 +418,9 @@ background-color: #404040;
 }
 
 .personalbest {
+  color: black;
   float: right;
-  border: 1px solid black;
+  border: 1px solid #bdc3c7;
   width: 48%;
   padding: 1%;
   max-height: 300px;
@@ -410,27 +428,46 @@ background-color: #404040;
 
 .user-bottom-section {
   margin-top: 3%;
-  margin-left: 3%;
-  height: 500px;
-  width: 100%;
 }
-.sortable {
-  /*list-style-type: none;*/
+.userportfolio {
+  width: 90vw;
+}
+.userportfolio .my-portfolio {
+  font-size: 250%;
+}
+.userportfolio tr {
+  padding: 50px;
+}
+.userportfolio th {
+  font: "strong";
+  font-size: 100%;
+}
+.userportfolio td {
+  margin: 50px;
+}
+/*.userportfolio tr {
+  padding: 2%
+}*/
+
+
+
+
+/*.sortable {
   margin: 0;
   padding: 0;
   width: 60%;
-}
-.sortable li {
+}*/
+/*.sortable li {
   margin: 0 3px 3px 3px;
   padding: 0.4em;
   padding-left: 1.5em;
   font-size: 1.4em;
   height: 18px;
-}
-.sortable li span {
+}*/
+/*.sortable li span {
   position: absolute;
   margin-left: -1.3em;
-}
+}*/
 
 
 

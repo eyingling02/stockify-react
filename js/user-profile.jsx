@@ -1,11 +1,11 @@
 const React = require('react')
 const {Link} = require('react-router')
 
-const Personal = require('./personal-details')
-const TopStats = require('./top-stats')
-const NextUpcoming = require('./next-upcoming')
-const PersonalBest = require('./personal-best')
-const GoToUser = require('./go-to-user')
+const Personal = require('./user-personal-details')
+const TopStats = require('./user-top-stats')
+const NextUpcoming = require('./user-next-upcoming')
+const PersonalBest = require('./user-personal-best')
+const GoToUser = require('./user-go-to-user')
 const UserPortfolio = require('./user-portfolio')
 // const UserPortfolio = require('./my-portfolio')
 

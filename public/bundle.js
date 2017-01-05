@@ -27599,20 +27599,20 @@
 	    React.createElement(
 	      "p",
 	      { className: "quarter" },
-	      "Q4 2016"
+	      "Most Active Stocks"
 	    ),
 	    React.createElement(
 	      "div",
 	      { className: "stat-blocks" },
 	      React.createElement(
 	        "p",
-	        null,
-	        "Daily Picks"
+	        { className: "topstat-title" },
+	        "#1"
 	      ),
 	      React.createElement(
 	        "p",
-	        null,
-	        "269"
+	        { className: "topstat-stock" },
+	        "NVDA"
 	      )
 	    ),
 	    React.createElement(
@@ -27620,13 +27620,13 @@
 	      { className: "stat-blocks" },
 	      React.createElement(
 	        "p",
-	        null,
-	        "Avg Streak"
+	        { className: "topstat-title" },
+	        "#2"
 	      ),
 	      React.createElement(
 	        "p",
-	        null,
-	        "2.8"
+	        { className: "topstat-stock" },
+	        "AMZN"
 	      )
 	    ),
 	    React.createElement(
@@ -27634,13 +27634,13 @@
 	      { className: "stat-blocks" },
 	      React.createElement(
 	        "p",
-	        null,
-	        "Gain/Loss"
+	        { className: "topstat-title" },
+	        "#3"
 	      ),
 	      React.createElement(
 	        "p",
-	        null,
-	        "+$15,249"
+	        { className: "topstat-stock" },
+	        "YELP"
 	      )
 	    )
 	  );
@@ -27694,7 +27694,7 @@
 	      React.createElement(
 	        "p",
 	        { className: "upcoming-opinion" },
-	        "\"This is a huge win for Elon. He doesn't care about money he cares about long term progress. TSLA books are scary red, like super risk trajectory. Likely all a massive calculated risk for Elon, which makes complete sense. TSLA stock is still a long term buy for me but short term sell. Solar is a long term sell (+2 years) it's just not ready for prime time and there's still going to be Trump backed oil headwinds. When all the pieces fall into place: Powerwall, Solar shingles, Cars. Will the economy able to afford their products?\""
+	        "\"This is a huge win for Elon. He doesn't care about money he cares about long term progress. TSLA books are scary red, like super risk trajectory. Likely all a massive calculated risk for Elon, which makes complete sense. TSLA stock is still a long term buy for me but short term sell. Solar is a long term sell (+2 years) it's just not ready for prime time and there's still going to be Trump backed oil headwinds. When all the pieces fall into place: Powerwall, Solar shingles, Cars. Will the economy able to afford it?\""
 	      ),
 	      React.createElement(
 	        "a",
@@ -27787,7 +27787,7 @@
 	      { className: "dropdown" },
 	      React.createElement(
 	        "button",
-	        { onclick: "myFunction()", className: "dropbtn" },
+	        { onClick: "myFunction()", className: "dropbtn" },
 	        "Dropdown"
 	      ),
 	      React.createElement(
@@ -27823,76 +27823,811 @@
 
 	var React = __webpack_require__(1);
 	var UserPortfolio = function UserPortfolio() {
-	    return React.createElement(
-	        "ol",
-	        { className: "sortable" },
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "p",
+	      { className: "my-portfolio" },
+	      "Portfolio"
+	    ),
+	    React.createElement(
+	      "table",
+	      { className: "table table-striped" },
+	      React.createElement(
+	        "tr",
+	        null,
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "NVDA"
+	          "th",
+	          null,
+	          "Symbol"
 	        ),
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "MSFT"
+	          "th",
+	          null,
+	          "Current Price"
 	        ),
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "AMZN"
+	          "th",
+	          null,
+	          "Expected Price"
 	        ),
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "YELP"
+	          "th",
+	          null,
+	          "Countdown"
 	        ),
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "ROST"
+	          "th",
+	          null,
+	          "Current Gain/Loss"
 	        ),
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "GOOG"
+	          "th",
+	          null,
+	          "Lifetime Gain/Loss"
 	        ),
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "FB"
+	          "th",
+	          null,
+	          "Best Streak"
 	        ),
 	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "TSLA"
-	        ),
-	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "NFLX"
-	        ),
-	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "AAPL"
-	        ),
-	        React.createElement(
-	            "li",
-	            { className: "ui-state-default" },
-	            React.createElement("span", { className: "ui-icon ui-icon-arrowthick-2-n-s" }),
-	            "ACTI"
+	          "th",
+	          null,
+	          "Best Stretch"
 	        )
-	    );
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "ALL (averages)  "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Avg: $210"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Avg: +4%"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Avg: 23 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Avg: +$120"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Avg: $2,000"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "5 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "300/380 over 90 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "NVDA Nvidia"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$107"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$120"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "10 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$90"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $12000"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "10 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "20/24 over 200 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "TSLA Tesla Motors"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$209"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$190"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "200 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct -$100 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Incorrect $19,000"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "15 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "36/44 over 100 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "YELP Yelp"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$38"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$45"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "60 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$10"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $1200"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "4 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "12/20 over 100 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "ROST Ross Stores"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$65"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$80"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "90 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $100 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $1,211"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "2 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "5/10 over 99 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "FB Facebook"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$115"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$115"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "30 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$105"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $241"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "41 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "43/50 over 200 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "TSLA Tesla Motors"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$209"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$190"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "200 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct -$100 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Incorrect $19,000"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "15 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "36/44 over 100 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "GOOG Google"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$772"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$800"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "5 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$90"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $199"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "5 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "21/30 over 111 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "NFLX Netflix"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$124"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$135"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "100 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $150 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $912"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "9 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "23/34 over 240 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "NVDA Nvidia"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$107"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$120"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "10 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$90"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $12000"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "10 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "20/24 over 200 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "TSLA Tesla Motors"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$209"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$190"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "200 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct -$100 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Incorrect $19,000"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "15 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "36/44 over 100 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "YELP Yelp"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$38"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$45"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "60 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$10"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $1200"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "4 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "12/20 over 100 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "ROST Ross Stores"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$65"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$80"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "90 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $100 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $1,211"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "2 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "5/10 over 99 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "FB Facebook"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$115"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$115"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "30 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$105"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $241"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "41 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "43/50 over 200 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "TSLA Tesla Motors"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$209"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$190"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "200 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct -$100 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Incorrect $19,000"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "15 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "36/44 over 100 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "GOOG Google"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$772"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$800"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "5 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "+$90"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $199"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "5 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "21/30 over 111 days"
+	        )
+	      ),
+	      React.createElement(
+	        "tr",
+	        null,
+	        React.createElement(
+	          "td",
+	          null,
+	          "NFLX Netflix"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$124"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "$135"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "100 days"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $150 "
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "Correct $912"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "9 in a row"
+	        ),
+	        React.createElement(
+	          "td",
+	          null,
+	          "23/34 over 240 days"
+	        )
+	      )
+	    )
+	  );
 	};
 
 	module.exports = UserPortfolio;
