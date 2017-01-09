@@ -17,7 +17,7 @@ class Stock extends React.Component {
     render() {
         return (
           <div className="individual-stock">
-            <div className='stock-top-stock-section'>
+            <div className='stock-top-section'>
                 <div className='stock-name'><StockName /></div>
                 <div className='stock-current-price'><StockCurrentPrice /></div>
                 <div className='stock-key-data'><StockKeyData /></div>

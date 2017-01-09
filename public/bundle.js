@@ -28650,8 +28650,8 @@
 	    Link = _require.Link;
 
 	var StockName = __webpack_require__(248);
-	var StockCurrentPrice = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./stock-current-price\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	var StockKeyData = __webpack_require__(249);
+	var StockCurrentPrice = __webpack_require__(249);
+	var StockKeyData = __webpack_require__(250);
 
 	// const Chart = require('./stock-chart')
 	// const ChartPrediction = require('./stock-chart-prediction')
@@ -28678,7 +28678,7 @@
 	                { className: 'individual-stock' },
 	                React.createElement(
 	                    'div',
-	                    { className: 'stock-top-stock-section' },
+	                    { className: 'stock-top-section' },
 	                    React.createElement(
 	                        'div',
 	                        { className: 'stock-name' },
@@ -28717,13 +28717,17 @@
 	    null,
 	    React.createElement(
 	      "div",
-	      { className: "stock-name" },
-	      "ADDYY Adidas"
-	    ),
-	    React.createElement(
-	      "div",
-	      { className: "stock-key-data" },
-	      "MKT CAP: 31.37B 52W HIGH: 88.85 52W LOW: 45.39 P/E: 31.16 YIELD: 1.19%"
+	      { className: "stock-title" },
+	      React.createElement(
+	        "p",
+	        { className: "stock-symbol" },
+	        "ADDYY"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "stock-company-name" },
+	        "Adidas"
+	      )
 	    )
 	  );
 	};
@@ -28731,11 +28735,45 @@
 
 /***/ },
 /* 249 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	stock;
+	var React = __webpack_require__(1);
+	var StockCurrentPrice = function StockCurrentPrice() {
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "div",
+	      { className: "stock-current-price" },
+	      "$76.32"
+	    )
+	  );
+	};
+
+	module.exports = StockCurrentPrice;
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var StockCurrentPrice = function StockCurrentPrice() {
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "div",
+	      { className: "stock-key-data" },
+	      "MKT CAP: 31.37B 52W HIGH: 88.85 52W LOW: 45.39 P/E: 31.16 YIELD: 1.19%"
+	    )
+	  );
+	};
+
+	module.exports = StockCurrentPrice;
 
 /***/ }
 /******/ ]);

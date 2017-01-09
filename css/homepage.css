@@ -270,16 +270,31 @@ background-color: #404040;
 }
 
 /* INDIVIDUAL STOCK PROFILE*/
-.stock-name {
+.stock-top-section {
+  padding-top: 5%;
+}
+.stock-title {
   float: left;
   padding-left: 5%;
-  font-size: 300%;
+  min-height: 100px;
+  background-color: green;
+  /*width: 30%;*/
 }
+.stock-symbol {
+  font-size: 300%;
+  margin-bottom: -10%;
+}
+.stock-company-name {
+  font-size: 250%;
+}
+
 .stock-current-price {
-  font-size: 200%;
+  font-size: 150%;
+  color: blue;
 }
 .stock-key-data {
-
+  font-size: 80%;
+  color: red;
 }
 
 /* INDIVIDUAL USER PROFILE*/
