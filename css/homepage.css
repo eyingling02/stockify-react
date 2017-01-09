@@ -269,6 +269,19 @@ background-color: #404040;
     float: left;
 }
 
+/* INDIVIDUAL STOCK PROFILE*/
+.stock-name {
+  float: left;
+  padding-left: 5%;
+  font-size: 300%;
+}
+.stock-current-price {
+  font-size: 200%;
+}
+.stock-key-data {
+
+}
+
 /* INDIVIDUAL USER PROFILE*/
 .individual-user {
   color: #404040;

@@ -28649,12 +28649,15 @@
 	var _require = __webpack_require__(179),
 	    Link = _require.Link;
 
-	var Personal = __webpack_require__(241);
-	var TopStats = __webpack_require__(242);
-	var NextUpcoming = __webpack_require__(243);
-	var PersonalBest = __webpack_require__(244);
-	var GoToUser = __webpack_require__(245);
-	var UserPortfolio = __webpack_require__(246);
+	var StockName = __webpack_require__(248);
+	var StockCurrentPrice = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./stock-current-price\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var StockKeyData = __webpack_require__(249);
+
+	// const Chart = require('./stock-chart')
+	// const ChartPrediction = require('./stock-chart-prediction')
+	// const Filters = require('./stock-filter-big-name')
+	// const Sorting = require('./stock-sort-user-text')
+	// const OpinionsPredictions = require('./stock-opinions')
 
 	var data = __webpack_require__(239);
 
@@ -28672,47 +28675,24 @@
 	        value: function render() {
 	            return React.createElement(
 	                'div',
-	                { className: 'individual-user' },
+	                { className: 'individual-stock' },
 	                React.createElement(
 	                    'div',
-	                    { className: 'user-top-section' },
+	                    { className: 'stock-top-stock-section' },
 	                    React.createElement(
 	                        'div',
-	                        { className: 'personal' },
-	                        React.createElement(Personal, null)
+	                        { className: 'stock-name' },
+	                        React.createElement(StockName, null)
 	                    ),
 	                    React.createElement(
 	                        'div',
-	                        { className: 'topstats' },
-	                        React.createElement(TopStats, null)
+	                        { className: 'stock-current-price' },
+	                        React.createElement(StockCurrentPrice, null)
 	                    ),
 	                    React.createElement(
 	                        'div',
-	                        { className: 'gotouser' },
-	                        React.createElement(GoToUser, null)
-	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'user-mid-section' },
-	                    React.createElement(
-	                        'div',
-	                        { className: 'nextupcoming' },
-	                        React.createElement(NextUpcoming, null)
-	                    ),
-	                    React.createElement(
-	                        'div',
-	                        { className: 'personalbest' },
-	                        React.createElement(PersonalBest, null)
-	                    )
-	                ),
-	                React.createElement(
-	                    'div',
-	                    { className: 'user-bottom-section' },
-	                    React.createElement(
-	                        'div',
-	                        { className: 'userportfolio' },
-	                        React.createElement(UserPortfolio, null)
+	                        { className: 'stock-key-data' },
+	                        React.createElement(StockKeyData, null)
 	                    )
 	                )
 	            );
@@ -28723,6 +28703,39 @@
 	}(React.Component);
 
 	module.exports = Stock;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+	var StockName = function StockName() {
+	  return React.createElement(
+	    "div",
+	    null,
+	    React.createElement(
+	      "div",
+	      { className: "stock-name" },
+	      "ADDYY Adidas"
+	    ),
+	    React.createElement(
+	      "div",
+	      { className: "stock-key-data" },
+	      "MKT CAP: 31.37B 52W HIGH: 88.85 52W LOW: 45.39 P/E: 31.16 YIELD: 1.19%"
+	    )
+	  );
+	};
+	module.exports = StockName;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	stock;
 
 /***/ }
 /******/ ]);
