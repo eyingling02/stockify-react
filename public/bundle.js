@@ -51,10 +51,7 @@
 	var Home = __webpack_require__(178);
 
 	var User = __webpack_require__(240);
-
-	// const Favorites = require('./favorites')
-	// const Opinions = require('./opinions')
-	// const Streaks = require('./streaks')
+	var Stock = __webpack_require__(247);
 
 	var _require = __webpack_require__(179),
 	    Router = _require.Router,
@@ -67,7 +64,8 @@
 	    Router,
 	    { history: hashHistory },
 	    React.createElement(Route, { path: '/', component: Home }),
-	    React.createElement(Route, { path: '/user', component: User })
+	    React.createElement(Route, { path: '/user', component: User }),
+	    React.createElement(Route, { path: '/stock', component: Stock })
 	  );
 	};
 
@@ -28631,6 +28629,100 @@
 	};
 
 	module.exports = UserPortfolio;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(1);
+
+	var _require = __webpack_require__(179),
+	    Link = _require.Link;
+
+	var Personal = __webpack_require__(241);
+	var TopStats = __webpack_require__(242);
+	var NextUpcoming = __webpack_require__(243);
+	var PersonalBest = __webpack_require__(244);
+	var GoToUser = __webpack_require__(245);
+	var UserPortfolio = __webpack_require__(246);
+
+	var data = __webpack_require__(239);
+
+	var Stock = function (_React$Component) {
+	    _inherits(Stock, _React$Component);
+
+	    function Stock() {
+	        _classCallCheck(this, Stock);
+
+	        return _possibleConstructorReturn(this, (Stock.__proto__ || Object.getPrototypeOf(Stock)).apply(this, arguments));
+	    }
+
+	    _createClass(Stock, [{
+	        key: 'render',
+	        value: function render() {
+	            return React.createElement(
+	                'div',
+	                { className: 'individual-user' },
+	                React.createElement(
+	                    'div',
+	                    { className: 'user-top-section' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'personal' },
+	                        React.createElement(Personal, null)
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'topstats' },
+	                        React.createElement(TopStats, null)
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'gotouser' },
+	                        React.createElement(GoToUser, null)
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'user-mid-section' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'nextupcoming' },
+	                        React.createElement(NextUpcoming, null)
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { className: 'personalbest' },
+	                        React.createElement(PersonalBest, null)
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { className: 'user-bottom-section' },
+	                    React.createElement(
+	                        'div',
+	                        { className: 'userportfolio' },
+	                        React.createElement(UserPortfolio, null)
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Stock;
+	}(React.Component);
+
+	module.exports = Stock;
 
 /***/ }
 /******/ ]);
