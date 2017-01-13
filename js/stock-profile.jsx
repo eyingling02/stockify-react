@@ -18,15 +18,15 @@ class Stock extends React.Component {
         return (
           <div className="individual-stock">
             <div className='stock-top-section'>
-                <div className='stock-name'><StockName /></div>
+                <StockName />
                 <div className='stock-current-price'><StockCurrentPrice /></div>
-                <div className='stock-key-data'><StockKeyData /></div>
+                {/* <div className='stock-key-data'><StockKeyData /></div> */}
             </div>
-            {/* <div className='stock-main-chart-section'>
-                <div className='chart'><Chart /></div>
-                <div className='chart-prediction'><ChartPrediction /></div>
+            <div className='stock-main-chart-section'>
+                {/* <div className='chart'><Chart /></div>
+                <div className='chart-prediction'><ChartPrediction /></div> */}
             </div>
-            <div className='stock-mid-filter-section'>
+            {/* <div className='stock-mid-filter-section'>
                 <div className='stock-filters'><Filters /></div>
             </div>
             <div className='stock-bottom-text-section'>

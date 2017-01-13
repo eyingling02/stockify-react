@@ -28679,22 +28679,14 @@
 	                React.createElement(
 	                    'div',
 	                    { className: 'stock-top-section' },
-	                    React.createElement(
-	                        'div',
-	                        { className: 'stock-name' },
-	                        React.createElement(StockName, null)
-	                    ),
+	                    React.createElement(StockName, null),
 	                    React.createElement(
 	                        'div',
 	                        { className: 'stock-current-price' },
 	                        React.createElement(StockCurrentPrice, null)
-	                    ),
-	                    React.createElement(
-	                        'div',
-	                        { className: 'stock-key-data' },
-	                        React.createElement(StockKeyData, null)
 	                    )
-	                )
+	                ),
+	                React.createElement('div', { className: 'stock-main-chart-section' })
 	            );
 	        }
 	    }]);
@@ -28746,8 +28738,22 @@
 	    null,
 	    React.createElement(
 	      "div",
-	      { className: "stock-current-price" },
-	      "$76.32"
+	      { className: "stock-current-price-info" },
+	      React.createElement(
+	        "p",
+	        { className: "stock-current-price" },
+	        "76.32"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "stock-daily-change" },
+	        "-0.16"
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "stock-daily-change" },
+	        "-0.20%"
+	      )
 	    )
 	  );
 	};
@@ -28768,7 +28774,62 @@
 	    React.createElement(
 	      "div",
 	      { className: "stock-key-data" },
-	      "MKT CAP: 31.37B 52W HIGH: 88.85 52W LOW: 45.39 P/E: 31.16 YIELD: 1.19%"
+	      React.createElement(
+	        "div",
+	        { className: "key-data" },
+	        React.createElement(
+	          "p",
+	          null,
+	          "MKT CAP: "
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "31.37B"
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "key-data" },
+	        React.createElement(
+	          "p",
+	          null,
+	          "52W HIGH/LOW: "
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "88.85/45.39"
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "key-data" },
+	        React.createElement(
+	          "p",
+	          null,
+	          "P/E: "
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "31.16"
+	        )
+	      ),
+	      React.createElement(
+	        "div",
+	        { className: "key-data" },
+	        React.createElement(
+	          "p",
+	          null,
+	          "YIELD: "
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "1.19%"
+	        )
+	      )
 	    )
 	  );
 	};
