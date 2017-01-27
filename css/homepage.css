@@ -52,14 +52,14 @@ body {
 
 /* HEADERS */
 .category {
+  color: #909090;
+  /*color: #27ae60;*/
+  /*color: #606060;*/
   text-align: left;
   /*margin-left: 4em;*/
   font-size: 200%;
   font-weight: 500;
   /*font-size: 2em;*/
-  /*color: #27ae60;*/
-  /*color: #606060;*/
-  color: #909090;
 }
 .favorites p {
   text-align: left;
@@ -100,7 +100,6 @@ body {
     box-shadow: 2px 2px 10px black;
 }
 .outer:after {
-  content: "";
   position: absolute;
   top: -110%;
   left: -210%;
