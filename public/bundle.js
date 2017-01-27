@@ -26894,7 +26894,7 @@
 	            React.createElement(
 	                'a',
 	                { href: 'javascript:;' },
-	                'BUY'
+	                'UP'
 	            )
 	        ),
 	        React.createElement(
@@ -26928,7 +26928,7 @@
 	            React.createElement(
 	                'a',
 	                { href: 'javascript:;' },
-	                'SELL'
+	                'DOWN'
 	            )
 	        )
 	    );
