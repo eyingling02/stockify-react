@@ -145,7 +145,7 @@ body {
 .buy a {
   font-weight: 500;
   font-size: 200%;
-  color: limegreen;
+  color: #FFD88C;
   text-decoration: none;
 }
 
@@ -153,7 +153,6 @@ body {
     margin-bottom: 1.5em;
     background-color: #FFFFFF;
     box-shadow: 0 0 6px #777777;
-    background-color: ;
     /*font-family: 'Open Sans', sans-serif;
     font-weight: 800;*/
 }
@@ -165,7 +164,7 @@ body {
   font-weight: 500;
   font-size: 200%;
   /*color: #ff0000;*/
-  color: orangered;
+  color: #FFD88C;
   text-decoration: none;
   /*color: #e25119;*/
 }
