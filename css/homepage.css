@@ -76,9 +76,7 @@ body {
 }
 
 .outer {
-/*background-color: #606060;*/
-background-color: #404040;
-    /*background-color: #27ae60;*/
+    background-color: #404040;
     position: relative;
     display: inline-block;
     height: 290px;

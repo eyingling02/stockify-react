@@ -28706,20 +28706,16 @@
 	var StockName = function StockName() {
 	  return React.createElement(
 	    "div",
-	    null,
+	    { className: "stock-title" },
 	    React.createElement(
-	      "div",
-	      { className: "stock-title" },
-	      React.createElement(
-	        "p",
-	        { className: "stock-symbol" },
-	        "ADDYY"
-	      ),
-	      React.createElement(
-	        "p",
-	        { className: "stock-company-name" },
-	        "Adidas"
-	      )
+	      "p",
+	      { className: "stock-symbol" },
+	      "ADDYY"
+	    ),
+	    React.createElement(
+	      "p",
+	      { className: "stock-company-name" },
+	      "Adidas"
 	    )
 	  );
 	};
