@@ -77,11 +77,10 @@ body {
 }
 
 .outer {
-    /*background-color: #FFFFFF;*/
     /*background-color: #404040;*/
-    /*background-color: #F7F7F7;*/
-    /*background-color: #979797;*/
-    background-color: #CDDBE4;
+    /*background-color: #CDDBE4;*/
+    background-color: #C3D2DB;
+    /*background-color: #AFBEC7;*/
     position: relative;
     display: inline-block;
     height: 290px;
@@ -203,7 +202,6 @@ body {
 }*/
 .inner * {
   /*color: #6DBFF6;*/
-  /*color: #555555;*/
   /*color: #666666;*/
   color: #FFFFFF;
 }
