@@ -10,7 +10,7 @@ const TileTrending = (props) => (
                 <h2>{props.ChangePercent}%</h2>
                 <h3>{props.CompanyName} days</h3>
             </a>
-        </div> 
+        </div>
         <div className='sell'>
             <a href='javascript:;'>DOWN</a>
         </div>

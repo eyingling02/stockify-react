@@ -2,7 +2,7 @@ const React = require('react')
 const TileFriendsOpinions = (props) => (
     <div className='outer'>
         <div className='buy'>
-            <a href='javascript:;'>BUY</a>
+            <a href='javascript:;'>UP</a>
         </div>
         <div className='inner'>
             <a href='livingroom.html' target='_blank'>
@@ -12,7 +12,7 @@ const TileFriendsOpinions = (props) => (
             </a>
         </div>
         <div className='sell'>
-            <a href='javascript:;'>SELL</a>
+            <a href='javascript:;'>DOWN</a>
         </div>
     </div>
 )
