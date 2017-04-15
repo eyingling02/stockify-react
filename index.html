@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- jquery sortable  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $sort( function() {
+      $sort( ".sortable" ).sortable();
+      $sort( ".sortable" ).disableSelection();
+    } );
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div id="stocks"><%= body %></div>
+
+    <script src="public/bundle.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script>var $slick = jQuery.noConflict(true);</script>
+
+    <script>
+        $slick(document).on('ready', function() {
+          console.log($().jquery)
+          console.log($slick().jquery)
+          console.log($sort().jquery)
+
+
+            $slick('.slider').slick({
+                dots: true,
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+
+                responsive: [
+                  {
+                    breakpoint: 1434,
+                    settings: {
+                      infinite: false,
+                      slidesToShow: 4,
+                      slidesToScroll: 4,
+                    }
+                  },
+                  {
+                    breakpoint: 1142,
+                    settings: {
+                      infinite: false,
+                      slidesToShow: 3,
+                      slidesToScroll: 3
+                    }
+                  },
+                  {
+                    breakpoint: 838,
+                    settings: {
+                      infinite: false,
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                  {
+                    breakpoint: 550,
+                    settings: {
+                      infinite: false,
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                ]
+            })
+        })
+    </script>
+</body>
+
+</html>
