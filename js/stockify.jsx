@@ -1,37 +1,21 @@
 const React = require('react')
-import { Match } from 'react-router'
-import { Provider } from 'react-redux'
-import store from './store'
-import AsyncRoute from './AsyncRoute'
+import ReactDOM from 'react-dom'
+// import { Match } from 'react-router'
+// import { Provider } from 'react-redux'
+// import store from './store'
+// import AsyncRoute from './AsyncRoute'
+const Landing = require('./Landing')
 
+// const User = require('./user-profile')
+// const Stock = require('./stock-profile')
 const { Router, Route, IndexRoute, hashHistory } = require('react-router')
 
-const Stockify = () => {
-  return(
+const Stockify = () => (
+  <Router history={hashHistory}>
+    <Route path='/' component={Landing} />
+    {/* <Route path='/user' component={User} />
+    <Route path='/stock' component={Stock} /> */}
+  </Router>
+)
 
-    <Provider store={store}>
-  <div className='stocks'>
-    <Match
-      exactly
-      pattern='/'
-      component={(props) => <AsyncRoute props={props} loadingPromise={System.import('./Home')} />}
-    />
-    <Match
-      pattern='/user'
-      component={(props) => {
-        return <AsyncRoute props={props} loadingPromise={System.import('./User')} />
-      }}
-    />
-    <Match
-      pattern='/stock'
-      component={(props) => {
-        return <AsyncRoute props={props} loadingPromise={System.import('./Stock')} />
-      }}
-    />
-  </div>
-</Provider>
-
-  )
-}
-
-export default Stockify
+ReactDOM.render(<Stockify />, document.getElementById('stockify'))

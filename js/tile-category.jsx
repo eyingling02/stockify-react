@@ -19,11 +19,4 @@ const TileCategory = (props) => (
 
 const {string} = React.PropTypes
 
-// TileCategory.propTypes = {
-//   title: string.isRequired,
-//   description: string.isRequired,
-//   year: string.isRequired,
-//   poster: string
-// }
-
 module.exports = TileCategory
