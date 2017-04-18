@@ -1,14 +1,14 @@
-const React = require('react')
-const {Link} = require('react-router')
-const TileHotStreak = require('./tile-hotstreak')
-const TileTrending = require('./tile-trending')
-const TileMyFavorites = require('./tile-myfavorites')
-const TileFriendsOpinions = require('./tile-friendsopinions')
-const TileCategory = require('./tile-category')
+import React from 'react'
+import { Link } from 'react-router'
+import TileHotStreak from './tile-hotstreak'
+import TileTrending from './tile-trending'
+import TileMyFavorites from './tile-myfavorites'
+import TileFriendsOpinions from './tile-friendsopinions'
+import TileCategory from './tile-category'
 
 const data = require('../data')
 
-class Landing extends React.Component {
+const Landing = React.createClass({
     render() {
         return (
             <div id="picks">
@@ -71,6 +71,6 @@ class Landing extends React.Component {
             </div>
         )
     }
-}
+})
 
-module.exports = Landing
+export default Landing

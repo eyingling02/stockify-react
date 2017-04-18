@@ -2,12 +2,10 @@ const React = require('react')
 const {Link} = require('react-router')
 
 const Personal = require('./user-personal-details')
-const TopStats = require('./user-top-stats')
 const NextUpcoming = require('./user-next-upcoming')
 const PersonalBest = require('./user-personal-best')
 const GoToUser = require('./user-go-to-user')
 const UserPortfolio = require('./user-portfolio')
-// const UserPortfolio = require('./my-portfolio')
 
 const data = require('../data')
 
@@ -17,7 +15,6 @@ class User extends React.Component {
           <div className="individual-user">
             <div className='user-top-section'>
                 <div className='personal'><Personal /></div>
-                <div className='topstats'><TopStats /></div>
                 <div className='gotouser'><GoToUser /></div>
             </div>
             <div className='user-mid-section'>

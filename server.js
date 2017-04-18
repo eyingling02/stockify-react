@@ -8,7 +8,7 @@ const _ = require('lodash')
 const fs = require('fs')
 const port = 8080
 const template = _.template(fs.readFileSync('./index.html'))
-const App = require('./js/Stockify').default
+const Stockify = require('./js/Stockify').default
 
 const server = express()
 
