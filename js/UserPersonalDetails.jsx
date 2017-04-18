@@ -1,5 +1,5 @@
 const React = require('react')
-const Personal = () => (
+const UserPersonalDetails = () => (
     <div>
         <img src="img/nelson-fb.png" height="150" width="150"></img>
         <div className="user-info">
@@ -10,4 +10,4 @@ const Personal = () => (
     </div>
 )
 
-module.exports = Personal
+module.exports = UserPersonalDetails

@@ -1,0 +1,39 @@
+exports[`test MyFavorites snapshot test 1`] = `
+<div
+  className="outer">
+  <div
+    className="buy">
+    <a
+      href="javascript:;">
+      BUY
+    </a>
+  </div>
+  <div
+    className="inner">
+    <a
+      href="livingroom.html"
+      target="_blank">
+      <h2 />
+      <p>
+        Today G/L: 
+        %
+      </p>
+      <p>
+        Total G/L: 
+        %
+      </p>
+      <p>
+        Total Picks: 
+         days
+      </p>
+    </a>
+  </div>
+  <div
+    className="sell">
+    <a
+      href="javascript:;">
+      SELL
+    </a>
+  </div>
+</div>
+`;

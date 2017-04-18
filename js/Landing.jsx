@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router'
-import TileHotStreak from './tile-hotstreak'
-import TileTrending from './tile-trending'
-import TileMyFavorites from './tile-myfavorites'
-import TileFriendsOpinions from './tile-friendsopinions'
-import TileCategory from './tile-category'
+import TileTrending from './TileTrending.jsx'
+import TileHotStreak from './TileHotStreak.jsx'
+import TileMyFavorites from './TileMyFavorites.jsx'
+import TileFriendsOpinions from './TileFriendsOpinions.jsx'
+import TileCategory from './TileCategory.jsx'
 
 const data = require('../data')
 
@@ -28,22 +28,22 @@ const Landing = React.createClass({
                         {data.Hotstreak.map((stock) => (<TileHotStreak {...stock} key={stock.UserId}/>))}
                     </div>
                </div>
-               <div className="row">
+               {/* <div className="row">
                  <div className="category">
                    <p>#Hashtags</p>
                  </div>
                  <div className="regular slider">
                    {data.FriendsOpinions.map((stock) => (<TileFriendsOpinions {...stock} key={stock.UserId}/>))}
                  </div>
-               </div>
-               <div className="row">
+               </div> */}
+               {/* <div className="row">
                  <div className="category">
                    <p>Shared News</p>
                  </div>
                  <div className="regular slider">
                    {data.FriendsOpinions.map((stock) => (<TileFriendsOpinions {...stock} key={stock.UserId}/>))}
                  </div>
-               </div>
+               </div> */}
                <div className="row">
                  <div className="category">
                    <p>Friends Opinions</p>

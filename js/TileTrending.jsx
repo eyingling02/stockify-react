@@ -19,11 +19,4 @@ const TileTrending = (props) => (
 
 const {string} = React.PropTypes
 
-// TileTrending.propTypes = {
-//   title: string.isRequired,
-//   description: string.isRequired,
-//   year: string.isRequired,
-//   poster: string
-// }
-
 module.exports = TileTrending

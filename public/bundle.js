@@ -3436,25 +3436,25 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(14);
 
-var _tileHotstreak = __webpack_require__(38);
+var _TileTrending = __webpack_require__(40);
 
-var _tileHotstreak2 = _interopRequireDefault(_tileHotstreak);
+var _TileTrending2 = _interopRequireDefault(_TileTrending);
 
-var _tileTrending = __webpack_require__(40);
+var _TileHotStreak = __webpack_require__(38);
 
-var _tileTrending2 = _interopRequireDefault(_tileTrending);
+var _TileHotStreak2 = _interopRequireDefault(_TileHotStreak);
 
-var _tileMyfavorites = __webpack_require__(39);
+var _TileMyFavorites = __webpack_require__(39);
 
-var _tileMyfavorites2 = _interopRequireDefault(_tileMyfavorites);
+var _TileMyFavorites2 = _interopRequireDefault(_TileMyFavorites);
 
-var _tileFriendsopinions = __webpack_require__(37);
+var _TileFriendsOpinions = __webpack_require__(37);
 
-var _tileFriendsopinions2 = _interopRequireDefault(_tileFriendsopinions);
+var _TileFriendsOpinions2 = _interopRequireDefault(_TileFriendsOpinions);
 
-var _tileCategory = __webpack_require__(36);
+var _TileCategory = __webpack_require__(36);
 
-var _tileCategory2 = _interopRequireDefault(_tileCategory);
+var _TileCategory2 = _interopRequireDefault(_TileCategory);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3482,7 +3482,7 @@ var Landing = _react2.default.createClass({
           'div',
           { className: 'regular slider' },
           data.MyFavorites.map(function (stock) {
-            return _react2.default.createElement(_tileMyfavorites2.default, _extends({}, stock, { key: stock.Symbol }));
+            return _react2.default.createElement(_TileMyFavorites2.default, _extends({}, stock, { key: stock.Symbol }));
           })
         )
       ),
@@ -3502,47 +3502,7 @@ var Landing = _react2.default.createClass({
           'div',
           { className: 'regular slider' },
           data.Hotstreak.map(function (stock) {
-            return _react2.default.createElement(_tileHotstreak2.default, _extends({}, stock, { key: stock.UserId }));
-          })
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'row' },
-        _react2.default.createElement(
-          'div',
-          { className: 'category' },
-          _react2.default.createElement(
-            'p',
-            null,
-            '#Hashtags'
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'regular slider' },
-          data.FriendsOpinions.map(function (stock) {
-            return _react2.default.createElement(_tileFriendsopinions2.default, _extends({}, stock, { key: stock.UserId }));
-          })
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'row' },
-        _react2.default.createElement(
-          'div',
-          { className: 'category' },
-          _react2.default.createElement(
-            'p',
-            null,
-            'Shared News'
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'regular slider' },
-          data.FriendsOpinions.map(function (stock) {
-            return _react2.default.createElement(_tileFriendsopinions2.default, _extends({}, stock, { key: stock.UserId }));
+            return _react2.default.createElement(_TileHotStreak2.default, _extends({}, stock, { key: stock.UserId }));
           })
         )
       ),
@@ -3562,7 +3522,7 @@ var Landing = _react2.default.createClass({
           'div',
           { className: 'regular slider' },
           data.FriendsOpinions.map(function (stock) {
-            return _react2.default.createElement(_tileFriendsopinions2.default, _extends({}, stock, { key: stock.UserId }));
+            return _react2.default.createElement(_TileFriendsOpinions2.default, _extends({}, stock, { key: stock.UserId }));
           })
         )
       ),
@@ -3582,7 +3542,7 @@ var Landing = _react2.default.createClass({
           'div',
           { className: 'regular slider' },
           data.TrendingHigher.map(function (stock) {
-            return _react2.default.createElement(_tileTrending2.default, _extends({}, stock, { key: stock.Symbol }));
+            return _react2.default.createElement(_TileTrending2.default, _extends({}, stock, { key: stock.Symbol }));
           })
         )
       ),
@@ -3602,7 +3562,7 @@ var Landing = _react2.default.createClass({
           'div',
           { className: 'regular slider' },
           data.Category.map(function (stock) {
-            return _react2.default.createElement(_tileCategory2.default, _extends({}, stock, { key: stock.Symbol }));
+            return _react2.default.createElement(_TileCategory2.default, _extends({}, stock, { key: stock.Symbol }));
           })
         )
       )
@@ -3632,7 +3592,7 @@ var React = __webpack_require__(1);
 var _require = __webpack_require__(14),
     Link = _require.Link;
 
-var Personal = __webpack_require__(44);
+var UserPersonalDetails = __webpack_require__(44);
 var NextUpcoming = __webpack_require__(42);
 var PersonalBest = __webpack_require__(43);
 var GoToUser = __webpack_require__(41);
@@ -3661,7 +3621,7 @@ var User = function (_React$Component) {
                     React.createElement(
                         'div',
                         { className: 'personal' },
-                        React.createElement(Personal, null)
+                        React.createElement(UserPersonalDetails, null)
                     ),
                     React.createElement(
                         'div',
@@ -4043,12 +4003,6 @@ var TileTrending = function TileTrending(props) {
 
 var string = React.PropTypes.string;
 
-// TileTrending.propTypes = {
-//   title: string.isRequired,
-//   description: string.isRequired,
-//   year: string.isRequired,
-//   poster: string
-// }
 
 module.exports = TileTrending;
 
@@ -4230,7 +4184,7 @@ module.exports = PersonalBest;
 "use strict";
 
 var React = __webpack_require__(1);
-var Personal = function Personal() {
+var UserPersonalDetails = function UserPersonalDetails() {
     return React.createElement(
         "div",
         null,
@@ -4257,7 +4211,7 @@ var Personal = function Personal() {
     );
 };
 
-module.exports = Personal;
+module.exports = UserPersonalDetails;
 
 /***/ },
 /* 45 */
@@ -10515,12 +10469,9 @@ Object.defineProperty(exports, "__esModule", {
 var _reactRouter = __webpack_require__(14);
 
 var React = __webpack_require__(1);
-// import ReactDOM from 'react-dom'
 var Landing = __webpack_require__(34).default;
 
 var User = __webpack_require__(35);
-// const Stock = require('./stock-profile')
-
 
 var Stockify = function Stockify() {
   return React.createElement(

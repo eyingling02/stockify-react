@@ -1,0 +1,235 @@
+exports[`test Landing snapshot test 1`] = `
+<div
+  id="picks">
+  <div
+    className="row">
+    <div
+      className="category">
+      <p>
+        My Favorites
+      </p>
+    </div>
+    <div
+      className="regular slider">
+      <TileMyFavorites
+        Duration={100}
+        Symbol="UA"
+        TodayGainLoss={1.29}
+        TotalGainLoss={15.45}
+        UserId={1} />
+      <TileMyFavorites
+        Duration={56}
+        Symbol="FB"
+        TodayGainLoss={4.5}
+        TotalGainLoss={5.45}
+        UserId={2} />
+      <TileMyFavorites
+        Duration={12}
+        Symbol="NVDA"
+        TodayGainLoss={1.21}
+        TotalGainLoss={25.54}
+        UserId={3} />
+      <TileMyFavorites
+        Duration={56}
+        Symbol="MDT"
+        TodayGainLoss={4.5}
+        TotalGainLoss={5.45}
+        UserId={2} />
+      <TileMyFavorites
+        Duration={12}
+        Symbol="TWX"
+        TodayGainLoss={1.21}
+        TotalGainLoss={25.54}
+        UserId={3} />
+    </div>
+  </div>
+  <div
+    className="streaks row">
+    <div
+      className="category">
+      <p>
+        Hot Streaks
+      </p>
+    </div>
+    <div
+      className="regular slider">
+      <TileHotStreak
+        PredictionCount={4}
+        StreakInDays={8}
+        Ticker="GILD"
+        UserId={1}
+        Username="thevictorchen" />
+      <TileHotStreak
+        PredictionCount={4}
+        StreakInDays={8}
+        Ticker="AMZN"
+        UserId={2}
+        Username="erica" />
+      <TileHotStreak
+        PredictionCount={4}
+        StreakInDays={8}
+        Ticker="GILD"
+        UserId={3}
+        Username="thenelson" />
+      <TileHotStreak
+        PredictionCount={4}
+        StreakInDays={8}
+        Ticker="AMZN"
+        UserId={4}
+        Username="thenelson" />
+      <TileHotStreak
+        PredictionCount={4}
+        StreakInDays={8}
+        Ticker="AMZN"
+        UserId={5}
+        Username="erica" />
+    </div>
+  </div>
+  <div
+    className="row">
+    <div
+      className="category">
+      <p>
+        Friends Opinions
+      </p>
+    </div>
+    <div
+      className="regular slider">
+      <TileFriendsOpinions
+        Opinion="Nothing good happening in their future. It\'s a toxic stock that lives with Zynga..."
+        Symbol="UA"
+        UserId={1}
+        Username="nelsonchen" />
+      <TileFriendsOpinions
+        Opinion="Nothing good happening in their future. It\'s a toxic stock that lives with Zynga..."
+        Symbol="FB"
+        UserId={2}
+        Username="nelsonchen" />
+      <TileFriendsOpinions
+        Opinion="Nothing good happening in their future. It\'s a toxic stock that lives with Zynga..."
+        Symbol="NVDA"
+        UserId={3}
+        Username="nelsonchen" />
+      <TileFriendsOpinions
+        Opinion="Nothing good happening in their future. It\'s a toxic stock that lives with Zynga..."
+        Symbol="MDT"
+        UserId={4}
+        Username="nelsonchen" />
+      <TileFriendsOpinions
+        Opinion="Nothing good happening in their future. It\'s a toxic stock that lives with Zynga..."
+        Symbol="TWX"
+        UserId={5}
+        Username="nelsonchen" />
+    </div>
+  </div>
+  <div
+    className="row">
+    <div
+      className="category">
+      <p>
+        Trending
+      </p>
+    </div>
+    <div
+      className="regular slider">
+      <TileTrending
+        ChangePercent={8.94}
+        CompanyName="Sprint Corporation"
+        Symbol="S" />
+      <TileTrending
+        ChangePercent={6.86}
+        CompanyName="Twitter"
+        Symbol="TWTR" />
+      <TileTrending
+        ChangePercent={4.36}
+        CompanyName="Valero Energy Corporation Commo"
+        Symbol="VLO" />
+      <TileTrending
+        ChangePercent={4.28}
+        CompanyName="United States Steel"
+        Symbol="X" />
+      <TileTrending
+        ChangePercent={4.19}
+        CompanyName="J.C. Penney Company"
+        Symbol="JCP" />
+      <TileTrending
+        ChangePercent={4.05}
+        CompanyName="CBS Corporation Class B Common"
+        Symbol="CBS" />
+      <TileTrending
+        ChangePercent={3.98}
+        CompanyName="Ford Motor Company"
+        Symbol="F" />
+      <TileTrending
+        ChangePercent={3.96}
+        CompanyName="American Eagle Outfitters"
+        Symbol="AEO" />
+      <TileTrending
+        ChangePercent={3.93}
+        CompanyName="Tesla Motors"
+        Symbol="TSLA" />
+      <TileTrending
+        ChangePercent={3.69}
+        CompanyName="Lions Gate Entertainment Corpor"
+        Symbol="LGF" />
+      <TileTrending
+        ChangePercent={3.66}
+        CompanyName="Groupon"
+        Symbol="GRPN" />
+      <TileTrending
+        ChangePercent={3.51}
+        CompanyName="General Motors Company Common S"
+        Symbol="GM" />
+      <TileTrending
+        ChangePercent={3.38}
+        CompanyName="Delta Air Lines"
+        Symbol="DAL" />
+      <TileTrending
+        ChangePercent={3.37}
+        CompanyName="Best Buy Co."
+        Symbol="BBY" />
+      <TileTrending
+        ChangePercent={3.19}
+        CompanyName="Mastercard Incorporated Common"
+        Symbol="MA" />
+    </div>
+  </div>
+  <div
+    className="row">
+    <div
+      className="category">
+      <p>
+        Industry: Technology
+      </p>
+    </div>
+    <div
+      className="regular slider">
+      <TileCategory
+        ChangePercent={8.94}
+        CompanyName="Sprint Corporation"
+        Industry="Tech"
+        Symbol="S" />
+      <TileCategory
+        ChangePercent={6.86}
+        CompanyName="Twitter"
+        Industry="Tech"
+        Symbol="TWTR" />
+      <TileCategory
+        ChangePercent={4.36}
+        CompanyName="Valero Energy Corporation Commo"
+        Industry="Tech"
+        Symbol="VLO" />
+      <TileCategory
+        ChangePercent={4.28}
+        CompanyName="United States Steel"
+        Industry="Tech"
+        Symbol="X" />
+      <TileCategory
+        ChangePercent={4.19}
+        CompanyName="J.C. Penney Company"
+        Industry="Tech"
+        Symbol="JCP" />
+    </div>
+  </div>
+</div>
+`;
